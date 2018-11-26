@@ -32,9 +32,6 @@
         <link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet">
 
         <link href="<?php bloginfo('template_url');?>/css/mobile.css" rel="stylesheet">
-        <style>
-			.ballon-active .ballon-menu>a{position:relative}.ballon-active #fixed-navigation .ballon-menu>a:after,.ballon-active .ballon-menu>a:after{content:"";position:absolute;top:-15px;text-align:center;width:25px;z-index:2;height:25px;background:url('<?php echo $imgNotif ?>') no-repeat}.ballon-active #fixed-navigation .ballon-menu>a:after{background:url('<?php echo $imgNotif ?>') no-repeat}.ballon-active #fixed-navigation .ballon-menu>a:before,.ballon-active .ballon-menu>a:before{content:"<?php echo $number; ?>";position:absolute;top:-14px;font-size:13px;right:-15px;z-index:3;color:#fff}.ballon-active .ballon-menu{background:#fff!important}.ballon-active .ballon-menu>a{color:#00539B!important}.ballon-active #fixed-navigation .ballon-menu>a,.ballon-active #fixed-navigation .ballon-menu>a .title-menu.fix,.ballon-active .ballon-menu.expanded>a,.ballon-active .sub-menu .ballon-menu a{color:#fff!important}.ballon-active #fixed-navigation .ballon-menu{background:#00539B!important}.ballon-active #fixed-navigation .sub-menu .ballon-menu>a,.ballon-active .sub-menu .ballon-menu>a{position:relative}.ballon-active #fixed-navigation .sub-menu .ballon-menu>a:before,.ballon-active .sub-menu .ballon-menu>a:before{content:"<?php echo $number; ?>";position:absolute;top:-16px;font-size:13px;right:-14px;z-index:3}.ballon-active #fixed-navigation .ballon-menu>a:before{top:-23px}.ballon-active #fixed-navigation .sub-menu .ballon-menu>a:after,.ballon-active .sub-menu .ballon-menu>a:after{content:"";position:absolute;top:-4px;right:-23px;text-align:center;width:25px;height:25px}.ballon-active .sub-menu .ballon-menu{background:#0e46a3!important}.ballon-active .sub-menu .ballon-menu.hovered{background:#073b91!important}.ballon-active #fixed-navigation .sub-menu .ballon-menu>a:after{background:url('<?php echo $imgNotif ?>') no-repeat}.ballon-active #fixed-navigation .sub-menu .ballon-menu>a:before{color:#fff}.ballon-active #fixed-navigation .ballon-menu{position:relative}.ballon-active #fixed-navigation .ballon-menu.expanded,.ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu{position:inherit}.ballon-active #fixed-navigation .ballon-menu:after{content:"";width:100%;bottom:-1px;left:0;height:1px;background:#00539b;position:absolute}.ballon-active .off-canvas-list .ballon-menu>a,.ballon-active .off-canvas-list .ballon-menu>a>span{position:relative}.ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu:after{height:0}.ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu{background:#0e46a3!important}.ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu.hovered{background:#073b91!important}.ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu a{color:#fff!important}.ballon-active .off-canvas-list .ballon-menu>a:after{right:0;font-size:12px;background:0 0}.ballon-active .off-canvas-list .ballon-menu>a:before{content:"";right:10px}.ballon-active .off-canvas-list .ballon-menu>a>span:after{content:"";background:url('<?php echo $imgNotif ?>') no-repeat;height:25px;width:25px;position:absolute;top:-13px;right:-27px}.ballon-active .off-canvas-list .ballon-menu>a>span:before{content:"<?php echo $number; ?>";position:absolute;top:-14px;right:-18px;z-index:3;color:#fff}.ballon-active .off-canvas-list .ballon-menu{background:inherit!important}.ballon-active .off-canvas-list .ballon-menu a{color:rgba(255,255,255,.7)!important}
-        </style>
 
         <!-- Favicon and touch icons  -->
         <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url');?>/images/favicon/apple-touch-icon.png">
@@ -116,6 +113,198 @@
                 $number = get_option('ballon_number');
             }
         ?>
+        <style>
+            .ballon-active .ballon-menu > a{
+                position: relative;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu > a:after,
+            .ballon-active .ballon-menu > a:after{
+                content: "";
+                position: absolute;
+                top: -15px;
+                text-align: center;
+                width: 25px;
+                z-index: 2;
+                height: 25px;
+                background: url('<?php echo $imgNotif ?>') no-repeat;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu > a:after{
+                background: url('<?php echo $imgNotif ?>') no-repeat;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu > a:before,
+            .ballon-active .ballon-menu > a:before{
+                content: "<?php echo $number; ?>";
+                position: absolute;
+                top: -14px;
+                font-size: 13px;
+                right: -15px;
+                z-index: 3;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu > a:before{
+                color: #fff;
+            }
+
+            .ballon-active .ballon-menu > a:before{
+                color: #fff;
+            }
+
+            .ballon-active .ballon-menu{
+                background: #fff !important;
+            }
+
+            .ballon-active .ballon-menu > a{
+                color: #00539B !important;
+            }
+
+            .ballon-active .ballon-menu.expanded > a{
+                color: #fff !important;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu{
+                background: #00539B !important;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu > a .title-menu.fix,
+            .ballon-active #fixed-navigation .ballon-menu > a{
+                color: #fff !important;
+            }
+
+            .ballon-active #fixed-navigation .sub-menu .ballon-menu > a,
+            .ballon-active .sub-menu .ballon-menu > a{
+                position: relative;
+            }
+
+            .ballon-active #fixed-navigation .sub-menu .ballon-menu > a:before,
+            .ballon-active .sub-menu .ballon-menu > a:before{
+                content: "<?php echo $number; ?>";
+                position: absolute;
+                top: -16px;
+                font-size: 13px;
+                right: -14px;
+                z-index: 3;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu > a:before{
+                top: -23px;
+            }
+
+            .ballon-active #fixed-navigation .sub-menu .ballon-menu > a:after,
+            .ballon-active .sub-menu .ballon-menu > a:after{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: -4px;
+                right: -23px;
+                text-align: center;
+                width: 25px;
+                height: 25px;
+            }
+
+            .ballon-active .sub-menu .ballon-menu{
+                background: #0e46a3 !important;
+            }
+
+            .ballon-active .sub-menu .ballon-menu.hovered{
+                background: #073b91 !important
+            }
+
+            .ballon-active .sub-menu .ballon-menu a{
+                color: #fff !important;
+            }
+
+            .ballon-active #fixed-navigation .sub-menu .ballon-menu > a:after{
+                background: url('<?php echo $imgNotif ?>') no-repeat;
+            }
+
+            .ballon-active #fixed-navigation .sub-menu .ballon-menu > a:before{
+                color: #fff;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu{
+                position: relative;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu,
+            .ballon-active #fixed-navigation .ballon-menu.expanded{
+                position: inherit;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu:after{
+                content: "";
+                width: 100%;
+                bottom: -1px;
+                left: 0;
+                height: 1px;
+                background: #00539b;
+                position: absolute;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu:after{
+                height: 0;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu{
+                background: #0e46a3 !important;
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu.hovered{
+                background: #073b91 !important
+            }
+
+            .ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu a{
+                color: #fff !important;
+            }
+
+            .ballon-active .off-canvas-list .ballon-menu > a{
+                position: relative;
+            }
+
+            .ballon-active .off-canvas-list .ballon-menu > a:after{
+                right: 0;
+                font-size: 12px;
+                background: none;
+            }
+
+            .ballon-active .off-canvas-list .ballon-menu > a:before{
+                content: "";
+                right: 10px;
+            }
+
+            .ballon-active .off-canvas-list .ballon-menu > a > span{
+                position: relative;
+            }
+
+            .ballon-active .off-canvas-list .ballon-menu > a > span:after {
+                content: "";
+                background: url('<?php echo $imgNotif ?>') no-repeat;
+                height: 25px;
+                width: 25px;
+                position: absolute;
+                top: -13px;
+                right: -27px;
+            }
+
+            .ballon-active .off-canvas-list .ballon-menu > a > span:before{
+                content:"<?php echo $number; ?>";
+                position: absolute;
+                top: -14px;
+                right: -18px;
+                z-index: 3;
+                color: #fff;
+            }
+
+            .ballon-active .off-canvas-list .ballon-menu{
+                background: inherit !important;
+            }
+
+            .ballon-active .off-canvas-list .ballon-menu a{
+                color: rgba(255, 255, 255, 0.7) !important;
+            }
+        </style>
     </head>
     <body <?php body_class($additional_class); ?>>
 

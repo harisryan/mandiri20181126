@@ -21,6 +21,7 @@
 					<option value="<?php the_permalink(); ?>" class="cp-color--blue-i"><?php the_title(); ?></option>
 				<?php
 					endwhile;
+                    wp_reset_query();
 					endif;
 				?>
 				</select>

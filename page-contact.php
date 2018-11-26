@@ -10,7 +10,6 @@
 
     // $this->session->set_userdata('cap_code', $ranStr);
     $_SESSION['cap_code']=$ranStr;
-
     $newImage = imagecreatefromjpeg(get_theme_root().'/axamandiri/images/cap_bg.jpg');
     $txtColor = imagecolorallocate($newImage, 0, 0, 0);
     imagestring($newImage, 5, 5, 5, $ranStr, $txtColor);

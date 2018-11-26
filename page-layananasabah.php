@@ -80,17 +80,15 @@ the_title();
 		</section>
 
 		<section  id="page-half" class="sections clearfix grey">
-			<aside class="large-6 columns desktop-content">
+			<aside class="large-4 columns desktop-content">
 				<?php get_template_part("widget/mandiri-care-corner");?>
 			</aside>
 
-			<!--<aside class="large-4 columns desktop-content">
-				<?php 
-					// get_template_part("widget/mobile-service");
-				?>
-			</aside>-->
+			<aside class="large-4 columns desktop-content">
+				<?php get_template_part("widget/mobile-service");?>
+			</aside>
 
-			<aside class="large-6 columns desktop-content">
+			<aside class="large-4 columns desktop-content">
 				<?php get_template_part("widget/sidebar-pencarian-form");?>
 			</aside>
 		</section>

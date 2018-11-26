@@ -1,4 +1,8 @@
 <?php
+/**
+ * Get All category
+ * @return [Array]
+ */
 function wp360_get_categories() {
     $categoriesTerms = get_categories( array(
         'orderby' => 'name'
@@ -16,6 +20,10 @@ function wp360_get_categories() {
     return $categories;
 }
 
+/**
+ * Get All Form Contact Form 7
+ * @return [Array]
+ */
 function getAllCF7(){
 
     $cf7Forms = get_posts( $args );
@@ -37,7 +45,10 @@ function getAllCF7(){
     return $rest;
 }
 
-
+/**
+ * Get All Post with post type product_matrix
+ * @return [Array]
+ */
 function getPostProduct(){
     $rest = array(
         '' => 'Select Post',

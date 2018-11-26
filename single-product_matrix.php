@@ -1,7 +1,6 @@
 
 <?php/** * Template Name: Karir: Agent */?>
 <?php get_header();?>
-<?php /* Template Default */ ?>
 
 <?php
 	$categoryTagCommander = wp_get_post_terms($post->ID, 'matrix_category', array("fields" => "names"));
@@ -60,6 +59,47 @@ $_GET['status'];?>
 		<?php if (has_post_thumbnail( $post->ID ) ): ?>
 			<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?>
 		<?php endif; ?>
+		<div id="page-head" class="relative m-top-150" style="background:#fcfdff url(<?php echo $image[0]; ?>) no-repeat top right">
+			<!-- <div class="separate-left-product absolute"></div> -->
+			<div class="box absolute set-1 large-5">
+				<?php $category = wp_get_post_terms($post->ID, 'matrix_category', array("fields" => "names")); ?>
+				<p class="c-white f-18"><?php echo $category[1];?></p>
+				<?php $slug = $post->post_name; ?>
+
+
+				<?php if($slug=='asuransi-mandiri-jaminan-kesehatan'):?>
+					<script type="text/javascript">
+						if (!window._dbd) { window._dbd = []; }
+						window._dbd.push({id: 2189, bt: 'c', sdm: 'rs.adapf.com'});
+						(function() {
+							var i = document.createElement('script');
+							i.type = 'text/javascript';
+							i.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'rs.adapf.com/p/c.js';
+							var s = document.getElementsByTagName('script')[0];
+							s.parentNode.insertBefore(i,s);
+						})();
+					</script>
+				<?php endif;?>
+
+				<div class="addthis_toolbox addthis_default_style addthis_16x16_style share-buttons left cp-addthis--width180">
+					<a class="addthis_button_facebook icons facebook fa fa-facebook"></a>
+					<a class="addthis_button_twitter icons twitter fa fa-twitter"></a>
+					<a class="addthis_button_print icons print fa fa-print"></a>
+					<a class="addthis_button_email icons email fa fa-envelope"></a>
+				</div>
+
+				<script type="text/javascript">//var addthis_config = {"data_track_addressbar":false};</script>
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52e88dff717990fa"></script>
+				<script type="text/javascript">
+				  var addthis_config = addthis_config||{};
+				  addthis_config.data_track_addressbar = false;
+				  addthis_config.data_track_clickback = false;
+				</script>
+				<!-- AddThis Button END -->
+			</div>
+
+			<div class="separate-right-product absolute"></div>
+		</div>
 	</div><!--end masthead-->
 	<div class="row p-all-0">
 	<div id="text-top-solusi" class=" section white clearfix">

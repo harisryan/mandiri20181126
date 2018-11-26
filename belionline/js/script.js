@@ -14,7 +14,7 @@
 $(document).ready(function() {
       
         //INSPIRASI WIDGET
-      $("#article-post .date").timeago();
+      
       $("#inspirasi-section .toggleNav a").click(function(){
           $(this).parents().toggleClass("expanded");
           //console.log("Asd");

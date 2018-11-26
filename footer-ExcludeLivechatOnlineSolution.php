@@ -49,7 +49,7 @@ var google_remarketing_only = true;
 </footer>
 
 <footer id="footer-copyright" aria-label="footer copyright">
-    <p><a href="<?php echo site_url();?>/disclaimer" class="cp-color--yellow" target="_blank">Disclaimer &amp; Ownership.</a> Copyright <?=date('Y')?> AXA Mandiri. <br> AXA Mandiri merupakan perusahaan asuransi yang terdaftar dan diawasi oleh Otoritas Jasa Keuangan</p>
+    <p><a href="<?php echo site_url();?>/disclaimer" class="cp-color--yellow" target="_blank">aaaaa Disclaimer &amp; Ownership.</a> Copyright <?=date('Y')?> AXA Mandiri. <br> AXA Mandiri merupakan perusahaan asuransi yang terdaftar dan diawasi oleh Otoritas Jasa Keuangan</p>
 
 </footer>
    

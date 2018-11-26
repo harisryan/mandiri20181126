@@ -35,7 +35,8 @@
 				<div class="m-bottom-25">
 					<div class="klaim-menu">
 					<h3 class="f-16">Bukan Layanan yang Anda Cari?</h3>
-					<p><?php _e("<!--:en-->Find the service you need from a selection of AXA Mandiri Customer Service<!--:--><!--:id-->Temukan layanan yang Anda butuhkan dari pilihan Layanan Nasabah AXA Mandiri<!--:-->"); ?></p>
+					<p><?php /* _e("<!--:en-->Find the service you need from a selection of AXA Mandiri Customer Service<!--:--><!--:id-->Temukan layanan yang Anda butuhkan dari pilihan Layanan Nasabah AXA Mandiri<!--:-->"); */
+								_e("Temukan layanan yang Anda butuhkan dari pilihan Layanan Nasabah AXA Mandiri"); ?></p>
 					 <?php $layananmenu = array(
 				                'theme_location'  => '',
 				                'container'       => '',

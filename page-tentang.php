@@ -86,7 +86,7 @@
 				<img src="https://axa.co.id/ingatsehat/img/logo-axa.png" alt="Logo AXA Indonesia" />
 			</div><!-- #logo-axa  -->
 			<div id="logo-mandiri" class="logo-branding right">
-				<img style="height: 80px; margin-top: -10px" src="https://axa-mandiri.co.id/wp-content/uploads/2018/09/magi-logo-high.png" alt="Logo AXA Mandiri" class="cp-margin--bottom15"  />
+				<img src="https://axa.co.id/ingatsehat/img/logo-axamandiri.png" alt="Logo AXA Mandiri" class="cp-margin--bottom15"  />
 			</div>
 			<div class="clearfix"></div>
 
@@ -214,11 +214,10 @@
 		<section id="data-tenaga-pemasar-section" class="bg-white3 sections clearfix relative o-hidden">
 			<div class="large-12 column">
 				<h4><?php _e("AXA Mandiri Financial Services"); ?></h4>
-				<p><?php _e("PT AXA Mandiri Financial Services didukung oleh lebih dari 2.300 Financial Advisor di lebih dari 1.300 cabang Bank Mandiri dan 200 cabang Bank Syariah Mandiri di seluruh Indonesia, serta lebih dari 500 Sales Officer pada jalur telemarketing dan korporasi. PT AXA Mandiri Financial Services terdaftar dan diawasi Otoritas Jasa Keuangan (OJK). Berikut adalah data tenaga pemasar:");?></p>
+				<p><?php _e("PT AXA Mandiri Financial Services (AXA Mandiri) didukung oleh lebih dari 1.800 Financial Advisor di lebih dari 1.800 cabang Bank Mandiri dan 170 cabang Bank Syariah Mandiri di seluruh Indonesia.  AXA Mandiri juga didukung oleh lebih dari 500 Telesales Officer yang memasarkan produk asuransi melalui jalur telemarketing. PT AXA Mandiri Financial Services terdaftar dan diawasi oleh Otoritas Jasa Keuangan (OJK). Berikut dibawah Data Tenaga Pemasar:");?></p>
 				<a href="<?php echo  site_url();?>/wp-content/uploads/datapemasar/Data_Tenaga_Pemasar.pdf" target="_blank" style="text-decoration:underline!mportant" > <?php _e("Daftar Tenaga Pemasaran Bancassurance"); ?></a><br/>
 				<a href="<?php echo  site_url();?>/wp-content/uploads/surat-pengantar-ke-ojk-juni-2017.pdf" target="_blank" style="text-decoration:underline!mportant;line-height: 25px;" > <?php _e("Nama Kepala Kantor di Luar Kantor Pusat (BM)"); ?></a><br/>
-				<a href="<?php echo  site_url();?>/wp-content/uploads/dokumen-ojk-sharia-penggantian-aick-ke-herri-januar.pdf" target="_blank" style="text-decoration:underline!mportant" > <?php _e("Nama Kepala Kantor di Luar Kantor Pusat (BSM)"); ?></a>
-				
+				<a href="<?php echo  site_url();?>/wp-content/uploads/dokumen-ojk-sharia-penggantian-aick-ke-herri-januar.pdf" target="_blank" style="text-decoration:underline!mportant" ><?php _e("Nama Kepala Kantor di Luar Kantor Pusat (BSM)"); ?></a>
 			</div>			
 		</section><!--end karir-->
 		<section id="karir-section" class="clearfix">

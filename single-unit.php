@@ -1,4 +1,3 @@
-
 <?php/** * Template Name: Single Unit */?>
 <?php $via_ajax = ($_GET['via_ajax']) ? $_GET['via_ajax'] : 0; ?>
 <?php if($via_ajax == 1) : ?>

@@ -92,7 +92,7 @@ if (remarketing_health_product($slug_product)) {
 						</div>
 					</div>
 
-					<div id="<?php echo get_the_ID();?>" class="section__article section__large">
+					<div class="section__article section__large">
 						<div class="container-content-custom">
 
 							<div class="row" style="margin-bottom:15px;">								

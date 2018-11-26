@@ -34,7 +34,8 @@
 	<div id="solusi_main" class="bg-greylight">
 		<div class="row solusiContainer">
 			<div id="solusiWidget">
-					<h3 class="m-bottom-30"><?php _e("<!--:en-->Our Solution<!--:--><!--:id-->Solusi Kami<!--:-->"); ?></h3>
+					<h3 class="m-bottom-30"><?php /* _e("<!--:en-->Our Solution<!--:--><!--:id-->Solusi Kami<!--:-->"); */
+													_e("Solusi Kami"); ?></h3>
 				<ul class="clearfix large-block-grid-3 medium-block-grid-1 small-block-grid-1">
 					<?php if(get_field('bisnis_page', 'options')): ?>
 						<?php while(has_sub_field('bisnis_page', 'options')): ?>
@@ -58,7 +59,7 @@
 									<?php endif; ?>
 								<li>
 									<div id="solusi-kesehatan" class="img_background" style="background-image:url(<?php the_sub_field('image'); ?>)">
-										<a href="<?php the_sub_field('url'); ?>" class="clearfix" onClick="ga('send', 'event', 'button', 'click', '<?=$label_ga?>');">
+										<a href="<?php the_sub_field('url'); ?>" class="clearfix" onClick="javascript:return tc_events_2(this,'interaction',{interaction_name:'button',interaction_detail:'<?=$label_ga?>'});">
 											<!-- <span class="bg-cover-left-solusiindex"></span> -->
 											<p class="title"><?php the_sub_field('text_image'); ?></p>
 											<span class="icon-solusi-index" style="background-image:url(<?php the_sub_field('icon'); ?>)"></span>
@@ -109,7 +110,8 @@
 	<div id="layanan">
 		<div class="row">
 			<div class="large-11 column centered">
-				<h3><?php _e("<!--:en-->SERVICE IN YOUR HAND<!--:--><!--:id-->LAYANAN DI TANGAN ANDA<!--:-->"); ?></h3>
+				<h3><?php /* _e("<!--:en-->SERVICE IN YOUR HAND<!--:--><!--:id-->LAYANAN DI TANGAN ANDA<!--:-->"); */
+							_e("LAYANAN DI TANGAN ANDA"); ?></h3>
 				<ul class="clearfix">
 					<?php if(get_field('layanan_home', 'options')): ?>
 						<?php while(has_sub_field('layanan_home', 'options')): ?>

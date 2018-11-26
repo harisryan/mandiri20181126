@@ -29,8 +29,7 @@
 						?>
 					</option>
 				</select>
-		        <button type="submit" id="searchsubmit-dir" class="button" onClick="javascript:return tc_events_2(this,'interaction',{interaction_name:'button',interaction_detail:'button_direktori'});"><?php /* _e("<!--:en-->Search<!--:--><!--:id-->Cari<!--:-->"); */
-		        																																		_e("Cari"); ?></button>
+		        <button type="submit" id="searchsubmit-dir" class="button"><?php _e("Cari"); ?</button>
 		    </form>
 
 	</div>

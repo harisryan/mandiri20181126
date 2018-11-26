@@ -955,26 +955,6 @@ $(document).ready(function() {
         return false;
       });
 
-      $("#download-brosur.divi-custom").click(function(){
-	if($("#ringkasan-informasi").hasClass("expanded"))
-	{
-		$("#ringkasan-informasi").toggleClass("expanded", 500);
-	}
-	$("#brochure-download").toggleClass("expanded", 500);
-	return false;
-      });
-
-      $("#download-ringkasan.divi-custom").click(function(){
-	if($("#brochure-download").hasClass("expanded"))
-	{
-		$("#brochure-download").toggleClass("expanded", 500);
-	}
-	$("#ringkasan-informasi").toggleClass("expanded", 500);
-	return false;
-      });
-
-
-
       $("input[type=file]").nicefileinput({
         label : 'Browse' // Spanish label
       });
@@ -1111,29 +1091,14 @@ $(document).ready(function() {
 Custom
 =============================================================================*/
 $(document).ready(function() {
-	$('.title-accordion').on('click',function(){
-		
-		if($(this).hasClass('active')){
-		  $('.title-accordion').removeClass('active');
-		}else{
-		  $('.title-accordion').removeClass('active');
-		  $(this).addClass('active');
-		}
-	});
-	
-	
-	$(".sub-menu-wrap a#change__url").each(function(index){
-		var hrefUrl = $(this).parent().prev().attr("href");
-		$(this).removeAttr("href");
-		$(this).attr("href",hrefUrl);
-	});
-	
-	$(".sub-menu-wrap a#change__url").on("click", function(e){
-		e.preventDefault();
-		var currentmenu = $(this).parent().prev();
-		console.log(currentmenu);
-		window.location.href = currentmenu.attr("href");
-	})			
-  
+  $('.title-accordion').on('click',function(){
+    
+    if($(this).hasClass('active')){
+      $('.title-accordion').removeClass('active');
+    }else{
+      $('.title-accordion').removeClass('active');
+      $(this).addClass('active');
+    }
+  });
 })
 

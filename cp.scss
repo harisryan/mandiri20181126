@@ -1,0 +1,339 @@
+// Crownpeak Fix
+
+// Footer
+#footer-copyright {
+  bottom: 0;
+  width: 100%;
+}
+
+// Bantuan
+#bantuan .large-8.columns.p-all-0 {
+  width: 708px;
+}
+
+// Contact Form
+.wpcf7-form-control-wrap {
+  &.nama,
+  &.tgl_lahir,
+  &.alamat,
+  &.email,
+  &.no_hp,
+  &.no_tlp,
+  &.kategori,
+  &.fax,
+  &.name_product,
+  &.no_polis,
+  &.subjek,
+  &.pesan,
+  {
+    width: 508px;
+  }
+}
+
+.inline-block.w-80p.f-14.m-left-6 {
+  display:inline-block ; width: 100% !important;
+}
+
+// Widget
+.widget {
+  & + c-blue {
+    font-size: 18px;
+    display: block;
+  }
+}
+
+// Wrapper
+#wrapper {
+  & + #searchdir {
+    margin-top: -150px;
+  }
+}
+
+// General
+.cp {
+
+  // Clearfix
+  &-clearfix {
+    clear: both;
+  }
+
+  // Forms
+  &-form {
+    &--width98-p {
+      width: 98%;
+    }
+    &--width96-p {
+      width: 96%;
+    }
+    &--width90-p {
+      width: 90%;
+    }
+  }
+
+  // Colors
+  &-color {
+    &--yellow {
+      color: #ffd200;
+    }
+
+    &--white-i {
+      color: #ffffff !important;
+    }
+    &--white {
+      color: #ffffff;
+    }
+
+    &--gray {
+      color: #626269;
+    }
+
+    &--blue-i {
+      color: #053584 !important;
+    }
+  }
+
+  // Live Agent
+  &-liveagent {
+    &--online {
+      cursor: pointer;
+    }
+    &--offline {
+      border: 0px none;
+    }
+  }
+
+  // Popup Box
+  &-popup {
+    &--ie {
+      display:none;
+      text-align:center;
+      background:#EEE;
+      color:#153389;
+
+      &_heading {
+        background:#fff;
+        font-size:1.250em;
+        line-height:1.2;
+        padding:20px 0;
+        margin: 0;
+        color:#153389;
+      }
+
+      &_help {
+        margin-bottom: 0;
+        padding: 20px;
+      }
+    }
+  }
+
+  // Display
+  &-display {
+    &--none {
+      display: none !important;
+    }
+    &--block {
+      display: block !important;
+    }
+  }
+
+  // Panel
+  &-panel {
+    &--padding {
+      padding:10px 60px;
+    }
+  }
+
+  // List
+  &-list {
+    &--requirement {
+      margin-top: -8px;
+    }
+  }
+
+  // Position
+  &-position {
+    &--top0 {
+      top: 0;
+    }
+    &--top30 {
+      top: 30px;
+    }
+    &--right5 {
+      right: 5px;
+    }
+    &--zindex100 {
+      z-index: 1000;
+    }
+    &--relative {
+      position: relative;
+    }
+  }
+
+  // Margin
+  &-margin {
+    &--zero { margin: 0; }
+    &--10 { margin: 10px; }
+    &--top20 { margin-top: 20px; }
+    &--right5 { margin-right: 5px; }
+    &--left-m25 { margin-left: -25px; }
+    &--left-5 { margin-left: 5px; }
+    &--bottom15 { margin-bottom: 15px; }
+    &--bottom10 { margin-bottom: 10px; }
+    &--bottom20 { margin-bottom: 20px; }
+  }
+
+  // Contact
+  &-contact {
+    label {
+      &.cp-contact {
+        &--label {
+          color: black;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // Pers
+  &-pers {
+    &--one {
+      border-top: 1px solid #FFD200;
+      margin: 10px;
+      width: 170px;
+    }
+  }
+
+  // Height
+  &-height {
+    &--100 {
+      min-height: 100px;
+    }
+    &-100-i {
+      min-height: 100px !important;
+    }
+  }
+
+  // Karir
+  &-karir {
+    &--kontak {
+      left: -25px;
+      top: 0;
+    }
+  }
+
+  // Contact
+  &-contact {
+    &--one {
+      text-align:center;font-size:1.250em;border-radius: 4px;
+    }
+    &--two {
+      text-align:center;font-size:1.250em;color: #fff;background: #053584;border-radius: 4px;
+    }
+  }
+
+  // Addthis
+  &-addthis {
+    &--width180 {
+      width: 180px;
+    }
+    &--width185 {
+      width: 185px;
+    }
+  }
+}
+
+// ETC
+#NFI-wrapper-13928997386852315 {
+  overflow: auto;
+  display: inline-block;
+
+  .NFI-button {
+    overflow: hidden; position: relative; display: block; float: left; white-space: nowrap; text-align: center;
+
+    .input[type="file"] {
+      opacity: 0; position: absolute; border: none; margin: 0px; padding: 0px; top: 0px; right: 0px; cursor: pointer; height: 60px;
+    }
+
+    .input[type="text"] {
+      display: block; float: left; margin: 0px; padding: 0px 5px; width: 182px;
+    }
+  }
+}
+
+#liveagent_button_online_5736F0000000FeH,
+#liveagent_button_online_57328000000L31o {
+  display: none; border: 0px none; cursor: pointer;
+}
+#liveagent_button_offline_5736F0000000FeH,
+#liveagent_button_offline_57328000000L31o {
+  display: none; border: 0px none;
+}
+
+// Captcha
+#img-captcha {
+  height: 37px;
+}
+
+// Anothers
+.mail {
+  & > .c-default {
+    font-size: 0.875em;
+
+    &--14 {
+      font-size: 14px;
+    }
+  }
+}
+
+.about {
+  &-separate {
+    left: -145px;
+    top: 0;
+  }
+}
+
+.ojk {
+  .details {
+    width: 500px;
+  }
+  .icon-solusi {
+    margin: 31px 8px;
+    position: relative;
+  }
+}
+
+.customcheck {
+  float:left !important;width:20px;
+}
+
+.cp-advisor {
+  &--panel {
+    height:690px;
+  }
+  &--agreement {
+    margin-bottom:20px;margin-top:10px;margin-left:auto;margin-right:auto;width:65%;font-size:18px;
+  }
+  &--input {
+    float:left !important;width:20px;margin-top:10px;
+  }
+  &--label {
+    width:85%;
+  }
+}
+
+.home_list_news_h5 {
+  margin-right: -11px; width: 258px;
+}
+
+#chartContainer {
+  height:177px;
+}
+
+#panel-advisor span.message {
+  display: none;
+}
+
+// Google Recaptcha
+.g-recaptcha {
+  padding-top: 20px;
+}

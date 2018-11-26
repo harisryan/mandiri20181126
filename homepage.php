@@ -5,10 +5,8 @@
 	.fancybox-opened{
 		z-index: 999999999;
 	}
-	#solusiWidget .large-block-grid-4>li{width:33%;}
-	@media only screen and (max-width: 800px) { #solusiWidget ul li { width: 100% !important; } }
 </style>
-<span class="cp-display--none"><h1>AXA Mandiri</h1></span>
+<span class="cp-display--none"><h1>AXA Mandirix</h1></span>
 
 
 	<?php get_template_part('inc/slideshow'); ?>
@@ -32,26 +30,25 @@
 										<?php $label_ga=''; ?>
 									<?php endif; ?>
 
-									<?php if ($label_ga!=''): ?>
-										<li>
-											<a href="<?php the_sub_field('url'); ?>">
-												<div id="solusi-kesehatan" class="img_background lazy" data-src="<?php the_sub_field('image'); ?>">
-													<div class="title header2home1"><?php the_sub_field('text_image'); ?></div>
-													<span class="icon-solusi-index" style="background-image:url(<?php the_sub_field('icon'); ?>)"></span>
-													<span class="bg-cover-right-solusiindex"></span>
-												</div>
-											</a>
+									<li>
+										<a href="<?php the_sub_field('url'); ?>">
+											<div id="solusi-kesehatan" class="img_background lazy" data-src="<?php the_sub_field('image'); ?>">
+												<div class="title header2home1"><?php the_sub_field('text_image'); ?></div>
+												<span class="icon-solusi-index" style="background-image:url(<?php the_sub_field('icon'); ?>)"></span>
+												<span class="bg-cover-right-solusiindex"></span>
+											</div>
+										</a>
 
-											<p class="show-for-large-only"><?php the_sub_field('excerpt'); ?></p>
-											<a aria-label="<?php echo $label_ga; ?>" href="<?php the_sub_field('url'); ?>">
-												<div class="solusi_button">
-													<span class="f-14">
-														<i class="fa fa-chevron-circle-right"></i><?php the_sub_field('button'); ?>
-													</span>
-												</div>
-											</a>
-										</li>
-									<?php endif; ?>
+										<p class="show-for-large-only"><?php the_sub_field('excerpt'); ?></p>
+										<a aria-label="<?php echo $label_ga; ?>" href="<?php the_sub_field('url'); ?>">
+											<div class="solusi_button">
+												<span class="f-14">
+													<i class="fa fa-chevron-circle-right"></i><?php the_sub_field('button'); ?>
+												</span>
+											</div>
+										</a>
+									</li>
+
 								<?php endwhile; ?>
 							<?php endif; ?>
 						<?php endwhile; ?>
@@ -133,9 +130,7 @@
 			</div>
 		</div>
 	</div>
-	<?php 
-		// echo do_shortcode('[widget_inspirasi][/widget_inspirasi]');
-	?>
+	<?php echo do_shortcode('[widget_inspirasi][/widget_inspirasi]'); ?>
 	<div id="region-1">
 		<div class="row">
 				<div class="large-4 columns">

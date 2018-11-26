@@ -7,8 +7,7 @@ get_header();
 	<div class="row">
 		<section class="white clearfix sections" id="sc-content">
 			<?php the_content();?>
-		</section>
-		
+		</section>		
 	</div>
 </div>
 <style>
@@ -25,12 +24,7 @@ get_header();
 	#sc-content{
 		padding:0px!important;
 	}
-	 #sc-content img {
-		width: 100%;
-		margin-top: -20px;
-		margin-bottom: -20px;
-	 } 
-	 #sc-content video {
+	 #sc-content video{
 		width: 100%;
 		margin-top: -20px;
 		margin-bottom: -25px;

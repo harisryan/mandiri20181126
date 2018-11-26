@@ -6,10 +6,9 @@ get_header();
 <div id="page-container">	
 	<div class="row">
 		<section class="white clearfix sections">
-			<a href="https://www.research.net/r/AMFSWebsite">
-				<img id="img_daftar_disini" src="<?php bloginfo('template_url')?>/images/landing-page-desktop-rev.jpg?ver=1" />
-			</a>
+			<?php the_content();?>
 		</section>
+		
 	</div>
 </div>
 <style>

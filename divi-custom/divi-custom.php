@@ -69,6 +69,27 @@ function wp360_dbcm_init_modules(){
        include("modules/TopLead.php");
        include("modules/PMContactFormTanpaBrosur.php");
        include("modules/PMContactFormAtasBawah.php");
+
+       /*
+       ** Revamp
+       */
+       include("modules/Revamp_Slideshow.php");
+       include("modules/Revamp_Solusi_Widget.php");
+
+       include("modules/Revamp_Layanan.php");
+       include("modules/Revamp_Layanan_Item.php");
+
+       include("modules/Revamp_Solusi_Anda.php");
+       include("modules/Revamp_Solusi_Anda_Item.php");
+
+       include("modules/Revamp_Inspirasi_Widget.php");
+       include("modules/Revamp_PM_Pengantar.php");
+       include("modules/Revamp_PM_Manfaat.php");
+
+       include("modules/Revamp_Syarat_Ketentuan.php");
+
+       include("modules/Revamp_Product_Listing.php");
+       include("modules/Revamp_Product_Listing_Item.php");
        
     }    
 }
@@ -77,6 +98,9 @@ function wp360_dbcm_init_modules(){
 ** Load Custom CSS
 */
 function load_custom_css(){
-    wp_enqueue_style( 'custom-css', get_template_directory_uri()."/divi-custom/css/divi-custom.css");
+    // wp_enqueue_style( 'custom-css', get_template_directory_uri()."/divi-custom/css/divi-custom.css");
+    wp_enqueue_script('tweenmax-js', get_template_directory_uri()."/divi-custom/js/tweenmax.min.js", array('jquery'));
+    wp_enqueue_script('custom-js', get_template_directory_uri()."/divi-custom/js/divi-custom.js", array('jquery'));
+
 }
 add_action( 'wp_enqueue_scripts', 'load_custom_css' );

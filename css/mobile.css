@@ -18,7 +18,7 @@
 
 	 .left-off-canvas-menu {
 	 	background-color: #0f2e86;
-	 	overflow: hidden;
+	 	overflow: auto;
 		height: 0;
 		min-height: 626px;
 	 }
@@ -2162,5 +2162,3 @@
 		/*width: 280px;*/
 	}
 }
-
-ul.off-canvas-list{overflow-y: scroll;height: 88%;}

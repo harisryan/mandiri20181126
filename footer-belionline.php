@@ -14,7 +14,7 @@
 					<div id="customer-care-footer" class="large-2 columns">
 						<div class="main-sites right m-top-15">
 							<p id="footer-customer">Customer Care Centre</p><br/>
-							<a href="tel:+622130058788"><p class="headerphone">+62 21 5797 7888</p></a>
+							<a href="tel:+622130058788"><p class="headerphone">+62 21 57977888</p></a>
 							<p id="temukan">Temukan Kami</p>
 						</div>
 						<div id="social-footer" class="clearfix">
@@ -48,10 +48,8 @@
 	<script type="text/javascript" src="<?php bloginfo('template_url');?>/belionline/js/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url');?>/belionline/js/jquery-ui.min.js" defer></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url');?>/belionline/js/modernizr.custom.91763.js" defer></script>
-	
 	<script type="text/javascript" src="<?php bloginfo('template_url');?>/belionline/js/foundation.min.js" defer></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url');?>/belionline/js/jquery.lazy.min.js" defer></script>
-	<script type="text/javascript" src="<?php bloginfo('template_url');?>/belionline/js/jquery.scrollstop.min.js" defer></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url');?>/belionline/js/lib.js" defer></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url');?>/belionline/js/script.js" defer></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url');?>/belionline/js/bootstrap.min.js" defer></script>

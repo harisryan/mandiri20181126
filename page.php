@@ -529,7 +529,7 @@ function slugify($text)
 foreach ($location as $lokasi ) {
 	echo slugify($lokasi['name']) . '<br/>';
 }
-
+ 
 foreach ($location as $lokasi ) {
 	wp_insert_term(
 	  $lokasi['name'], // the term 

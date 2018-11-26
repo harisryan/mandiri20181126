@@ -48,13 +48,14 @@ class PMPengantar extends ET_Builder_Module {
 				<div class="uppercase fw-normal f-17 header3_pengantar"><?php echo $this->shortcode_atts['title']; ?></div>
 				<h1 class="cp-display--none"><?php echo $this->shortcode_atts['sub_title']; ?></h1>
 				<div class="c-blue f-24 header1_pengantar"><?php echo $this->shortcode_atts['sub_title']; ?></div>
+
 				<?php if($this->shortcode_atts['title']=="Erection All Risks"): ?>
 					<div class="column-1 f-16 c-greylight">
 						<?php if( have_posts() ) : the_post(); ?>
 							 <?php echo $this->shortcode_content; ?>
 						<?php endif;?>
 					</div>
-				<?else:?>
+				<?php else: ?>
 				<div class="column-2 f-16 c-greylight">
 						<?php if( have_posts() ) : the_post(); ?>
 							 <?php echo $this->shortcode_content; ?>

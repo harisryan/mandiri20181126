@@ -57,6 +57,18 @@ if ($p!='') {
 					$solusi = $category->slug;
 				}
 
+				if ( $solusi == "solusi-kesehatan" ) {
+			        $product_label = "Health";
+			    } elseif ( $solusi == "solusi-proteksi" ) {
+			        $product_label = "Protection";
+			    } elseif ( $solusi == "solusi-invest" ) {
+			        $product_label = "Others::Credit_Protection";
+			    } elseif ( $solusi == "solusi-umum" ) {
+			        $product_label = "General";
+			    } else {
+			        $product_label = "Travel";
+			    }
+
 				while(has_sub_field('matrix_manfaat')):
 	            	
 	            		$arr_manfaat=get_field('matrix_manfaat');
@@ -69,7 +81,7 @@ if ($p!='') {
 						}
 	            	
             	endwhile;
-				array_push($output, array('title'=>$title,'thumbnail'=>$thumbnail[0],'slug'=>$slug, 'ID'=>$post->ID,'entity'=>$entity, 'manfaat'=>$manfaat, 'solusi'=>$solusi));
+				array_push($output, array('title'=>$title,'thumbnail'=>$thumbnail[0],'slug'=>$slug, 'ID'=>$post->ID,'entity'=>$entity, 'manfaat'=>$manfaat, 'solusi'=>$solusi, 'product_label' => $product_label));
 
 				// if ($post->post_type == "rumah_sakit") {
 				// } else {

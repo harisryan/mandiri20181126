@@ -51,17 +51,6 @@ class PMContactForm7 extends ET_Builder_Module {
                 <?php $count++; endwhile;?>
             </ul>
         </section>
-        <section aria-label="Ringkasan Informasi" id="ringkasan-informasi" class="sections bg-blue clearfix">
-            <ul class="pdf-list small-block-grid-2 medium-block-grid-2 large-block-grid-2 clearfix">
-                <?php $count = 0; while (has_sub_field('ringkasan_produk')): ?>
-                <li>
-                    <a href="<?php the_sub_field('file');?>" class="bg-white block clearfix" target="_blank" title="Download <?php echo get_sub_field('title') . ' ' . getFileDetail(get_sub_field('file'));?>">
-                        <span class="icon"></span><strong><?php echo get_sub_field('title') . ' ' . getFileDetail(get_sub_field('file'));?></strong> <i class="fa fa-download right"></i>
-                    </a>
-                </li>
-                <?php $count++; endwhile;?>
-            </ul>
-        </section>
 
         <section aria-label="Kontak" id="kontak" class="sections white clearfix">
             <div id="floating" class="absolute top-0 right-55">
@@ -78,10 +67,7 @@ class PMContactForm7 extends ET_Builder_Module {
                 $brochure = get_field('matrix_brochure2');
                 ?>
                     <!-- <a href="<?=$brochure[0]['file']?>" target="_blank" class="button blue" onClick="ga('send', 'event', 'button', 'click','Download Button');">Download</a> -->
-                <?php //if($count > 0):?>
-                    <a id="download-ringkasan" href="javascript:void(0)" class="button blue divi-custom">Ringkasan Informasi Produk</a>
-                <?php //endif;?>
-                    <a id="download-brosur" href="javascript:void(0)" class="button blue form7 divi-custom" onClick="javascript:return tc_events_2(this,'interaction',{interaction_name:'file_download',interaction_detail:'independent_<?php echo $post->post_name;?>'});">Download</a>
+                    <a href="#" class="button blue brochure-menu" onClick="javascript:return tc_events_2(this,'interaction',{interaction_name:'file_download',interaction_detail:'independent_<?php echo $post->post_name;?>'});">Download</a>
                     <!-- <section id="brochure-download" class="sections bg-blue clearfix">
                         <ul class="pdf-list small-block-grid-2 medium-block-grid-2 large-block-grid-2 clearfix">
                             <?php $count = 0; while (has_sub_field('matrix_brochure2')):?>
@@ -90,6 +76,9 @@ class PMContactForm7 extends ET_Builder_Module {
                         </ul>
                     </section> -->
                 <?php endif;?>
+                <?php //if($count > 0):?>
+                    <a href="#" class="button blue brochure-menu" onClick="ga('send', 'event', 'button', 'click','Download Button');">Brosur</a>
+                <?php //endif;?>
                 <a href="<?php echo site_url('bandingkan-produk'); ?>" class="button c-blue bg-bandingkan" onClick="javascript:return tc_events_2(this,'virtual_page',{virtual_page_name:'smarttraveller::overview',product_label:'GI::Travel',page_status:'sale_payment'});">Bandingkan Produk</a>
             </div>
             <div class="fw-normal f-17 uppercase m-bottom-0 m-top-45 header4_kontak">Kontak</div>

@@ -268,6 +268,21 @@ class PMManfaat extends ET_Builder_Module {
                     }
                 ?>
                 <?php global $post;  ?>
+                <li class="ojk">
+                    <div class="bg-white radius-all-5">
+                        <div class="icon-125x100">
+                            <img src="https://axa-mandiri.co.id/wp-content/uploads/2014/08/ojk-blue.png" class="icon-solusi" alt="ojk">
+                        </div>
+                            <div class="details">
+                                <div class="uppercase f-18 m-bottom-0 produkdetails">LEMBAGA PENGAWAS DAN PENGATUR</div>
+                                <?php if($slug1=='amfs'):?>
+                                <p class="f-16">AXA Mandiri Financial Services terdaftar dan diawasi oleh Otoritas Jasa Keuangan</p>
+                                <?php elseif($slug1=='magi'):?>
+                                <p class="f-16">PT. Mandiri AXA General Insurance terdaftar dan diawasi oleh Otoritas Jasa Keuangan</p>
+                                <?php endif; ?>
+                            </div>
+                    </div>
+                </li>
             </ul>
             </div>
         </section>
