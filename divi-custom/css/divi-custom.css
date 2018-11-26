@@ -1,0 +1,105 @@
+.row.solusiContainer{
+	margin: 0px auto !important;
+}
+
+.large-block-grid-4>li{
+	padding: 0 0.25rem .55rem !important;
+}
+
+.m-bottom-30{
+	margin-top: 30px !important; 
+	margin-bottom: 30px !important; 
+}
+
+.bg-greylight{
+	background: #f7f7f7 !important;
+}
+
+.bg-cover-right-solusiindex{
+    border-bottom-right-radius: 10px !important;
+    background: url(../images/bg-cover-right-solusiindex.png) no-repeat !important;
+    position: absolute;
+    width: 57px;
+    height: 90px;
+    bottom: 0;
+    right: 0;
+}
+
+.board-director{
+    background: url(../images/bg-bod.jpg) top center no-repeat;
+    background-size: cover;
+    min-height: 418px;
+    padding: 40px 70px;
+    display: none;
+}
+
+.board-director.active{
+    display: block;
+}
+
+.board-director .owl-page.active span{
+    background: #cc2329;
+}
+
+.board-director .owl-page span{
+    background: #b5b7b9;
+}
+
+.board-director .owl-buttons i{
+    color: #053584;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #E2E2E2;
+    line-height: 40px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.board-director .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+}
+
+.board-director .owl-next {
+    position: absolute;
+    right: -60px;
+    top: 50%;
+}
+
+.board-director h4 {
+    color: #053584;
+    margin: 0;
+    font-size: 20px;
+}
+
+.board-director h5 {
+    font-size: 16px;
+    color: #053584;
+    margin: 0;
+}
+
+.board-director h3.text-center{
+    color: #053584;
+    margin-bottom: 30px;
+}
+
+.board-director .bod-section{
+    list-style: none;
+}
+
+#ringkasan-informasi {
+    background: #243870;
+    height: 0;
+    overflow: hidden;
+    padding: 40px 60px !important;
+    margin-bottom:-70px;
+    position: relative;
+}
+
+#ringkasan-informasi.expanded {
+   height: auto;
+   padding: 40px 60px !important;
+   margin-bottom: 0;
+}

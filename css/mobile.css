@@ -1,0 +1,2166 @@
+@media only screen and (max-width: 1200px) {
+	html.active, .offcanvas-active {
+		height: 100%;
+		overflow: hidden;
+	}
+	.large-11{
+		padding: 0 15px;
+		width: auto;
+	}
+
+	#layanan {
+		padding: 50px 15px
+	}
+
+	 .right-off-canvas-menu {
+	 	background: #eeeeee;
+	 }
+
+	 .left-off-canvas-menu {
+	 	background-color: #0f2e86;
+	 	overflow: hidden;
+		height: 0;
+		min-height: 626px;
+	 }
+
+	 .right-off-canvas-menu #customerCare {
+	 	width: 100%;
+	 	top: 0;
+	 	right: 0;
+	 	height: auto !important;
+	 }
+
+	 .right-off-canvas-menu #customerCare .icon-top,
+	 .right-off-canvas-menu #customerCare h3 {
+	 	display: none;
+	 }
+
+	 .right-off-canvas-menu #customerCare #details {
+	 	border: 0;
+	 }
+
+	 #fixed-navigation .custumer-menu {
+		display: none;
+	}
+
+	.banner-menu {
+		display: none;
+	}
+
+	#fixed-navigation .menu-primary-menu-container,
+	#fixed-navigation ul,
+	#fixed-navigation ul.other {
+		width: auto;
+	}
+
+	#fixed-navigation ul.sub-menu > li {
+		width: 180px;
+	}
+
+	/*#fixed-navigation ul > li {
+		padding: 10px 36px;
+	}*/
+
+	#fixed-navigation ul.other li.search-menu {
+  		border-right: 1px solid #E2E7F5;
+	}
+
+	#fixed-navigation ul > li.logo-fix-nav {
+		float: right;
+		border-left: none; 
+	}
+/*
+	#fixed-navigation ul.other > li {
+		float: right;
+		right: 0;
+		border-left: 0;
+	}
+*/
+	/*#fixed-navigation .menu-primary-menu-container ul > li:last-child {
+		border-right: 1px solid #E2E7F5;
+	}*/
+
+	#fixed-navigation .menu-primary-menu-container .sub-menu li:last-child {
+		border-right: none;
+	}
+
+	.main-nav li.hovered .sub-menu-wrap {
+		width: 100% !important;
+	}
+
+	/*#fixed-navigation .other.active #container-search-wrap {
+		left: 0;
+		width: 100%;
+		padding: 0 !important;
+	}
+*/
+	#container-search-wrap #search-wrap {
+		float: right;
+		right: 0;
+	}
+
+	#listing-items {
+		margin: 0 auto;
+	}
+
+	#unitWidget.expanded {
+		height: auto;
+	}
+	
+	#ulipDateSelector,
+	#chartContainer {
+		width: 50%;
+	}
+
+	#unitWidget #ajaxContent > div > div:nth-child(3) {
+		width: 100%;
+	}
+
+	#footer .row {
+		padding: 8px 15px;
+	}
+
+	.slideshow-unit .unit-item li:nth-child(1) .product-title{
+		position: relative;
+		width: 155px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.slideshow-unit .unit-item li {
+		margin: 0;
+	}
+
+	#customerCare {
+		right: 15px;
+	}
+
+	#customercare-fixed,
+	#customercare-fixed #customerCare {
+		right: 130px;
+	}
+
+	#tahukah-anda .owl-wrapper,
+	#tahukah-anda .owl-item  {
+		width: 100%!important;
+	}
+
+	.blue-sections-cover-left {
+		background-position-x: -30px;
+		background-position-y: 50%;
+	}
+
+	#layanan-submenu ul li a {
+		padding: 0 16px;
+	}
+
+	#layanan-submenu ul li span {
+		display: none;
+	}
+
+	/*#fixed-navigation .other.active #search-wrap {
+		margin-right: 30%;
+	}*/
+}
+
+@media only screen and (max-width: 1075px) {
+	#page-half .img_archive {
+		margin-bottom: 0 !important;
+	}
+
+	#direktori-widget, #karir-widget {
+		position: relative;
+	}
+
+	#direktori-widget .img-content, #karir-widget .img-content {
+		display: none;
+	}
+
+	#direktori-widget #pilih-dir {
+		position: absolute;
+		bottom: 0;
+		width: 84%;
+	}
+
+	#direktori-widget #pilih-direktori {
+		width: 60%;
+	}
+
+	#karir-widget .button.right {
+		position: absolute;
+		bottom: 0;
+		right: 20px;
+	}
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1073px) {
+	#kontak form .fieldset {
+		float: left;
+		width: 72%;
+		margin: 0 5px;
+	}
+}
+
+@media only screen and (max-width:  1073px) {
+	#mandiricare .img_archive.left,
+	#mobile-service .img_archive.left {
+		display: none;
+	}
+
+	#mandiricare .content-arcive,
+	#mobile-service .content-arcive {
+		float: left;
+	}
+
+	#mandiricare .content-arcive .button-center,
+	#mobile-service .content-arcive .button-center {
+		bottom: 30px;
+		right: 20px;
+		left: 20px;
+		margin: 0 auto;
+		width: 84px;
+		position: absolute;
+	}
+
+	.page-layanan-nasabah .content-widget,
+	.page-customer-quick-center .content-widget {
+		height: 340px;
+		position: relative;
+	}
+
+	.page-customer-quick-center #custcare-center .large-4,
+	.page-layanan-nasabah #page-half .large-4 {
+		padding: 0 10px;
+	}
+
+	.page-customer-quick-center #custcare-center .content-widget,
+	.page-layanan-nasabah #page-half .content-widget {
+		padding: 25px 25px;
+	}
+	
+}
+
+@media only screen and (min-width: 1025px) {
+	.tablet-content {display: none !important;}
+}
+
+
+@media only screen and (max-width: 1025px) {
+	/*#searchform {
+		width: 19%;
+	}*/
+
+	.blue-sections-cover-left {
+		background-position-x: -145px;
+		background-position-y: 50%;
+	}
+
+
+	#fixed-navigation ul > li {
+		padding: 10px 11px;
+	}
+
+	.tablet-content {
+		display: block !important;
+	}
+
+	.hide-on-tablet {
+		display: none !important;
+	}
+
+	#solusiWidget {
+		width: 100%;
+		text-align: center;
+		height: auto;
+	}
+
+	#solusiWidget #intro {
+		background: none;
+		width: 100%;
+		float: none;
+	}
+
+	#solusiWidget #intro:after {
+		display: none;
+	}
+
+	#solusiWidget ul {
+		margin: 0;
+		width: 100%;
+		padding-bottom: 25px;
+	}
+
+	#wrapper {
+		padding: 0;
+	}
+
+	#content-details {
+		padding: 30px 15px;
+	}
+
+	.blue-sections, #manfaat-luas {
+		padding: 30px 30px !important;
+	}
+
+	/*#page-container .sections {
+		padding: 40px 15px !important;
+	}*/
+
+	/*.single-product_matrix #page-container > #brochure-download .sections {
+		padding: 0 !important;
+	}*/
+
+	.content-box {
+		padding: 10px 0;
+	}
+
+	#mainSlider {
+		height: 400px;	
+	}
+
+	#mobile-slide, #mobile-slide li  {
+		height: 400px;
+		width: 100% !important;
+		margin: 0;
+		background-size: cover;
+		background-position: center center;
+		list-style: none;
+	}
+
+	.slideBG {
+		height: 100%;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.closeVideo {
+		top: 10px;
+		right: 10px;
+	}
+
+	/*capos edit*/
+	#manfaat-luas li p {
+		padding-top: 20px;
+		float: none;
+		margin-right: 6px;
+		line-height: 1.1em;
+		font-size: 13px;
+	}
+
+	#region-1 .m-bottom-10 {
+		line-height: 1em;
+	}
+
+	#ulip-product {
+		margin-right: 8px;
+		margin-left: 50px
+	}
+
+	.unit-item li {
+		margin: 0 5px;
+	}
+
+	#unitWidget.expanded .bottom-widget {
+		height: auto;
+	}
+
+	/*#fixed-navigation .main-nav > li > div > div > ul > li ul > li{
+		width: 125px !important;
+	}*/
+
+	
+
+	/*.slideshow-unit .product-title {
+		width: 150px;
+		line-height: 0.9em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}*/
+
+	.slideshow-unit .unit {
+		width: auto;
+	}
+
+	.page-tentang-axa-mandiri #karir-section {
+		padding: 40px 70px;
+	}
+
+	/*.page-tentang-axa-mandiri #karir-section .career-list li {
+		width: 148px;
+		height: 153px;
+	}*/
+
+	/*.page-tentang-axa-mandiri .career-list li.world {
+		background-position: 31px 32px;
+	}
+
+	.page-tentang-axa-mandiri .career-list li.innovation {
+		background-position: -196px 30px;
+	}
+
+	.page-tentang-axa-mandiri .career-list li.environments {
+		background-position: 28px -110px;
+	}
+
+	.page-tentang-axa-mandiri .career-list li.ladder {
+		background-position: -197px -105px;
+	}*/
+
+	.single-klaim .pdf-list strong {
+		width: 75%;
+	}
+
+	#layanan-submenu ul li span {
+		display: none;
+	}
+
+	.page-informasi-umum #premi .content-widget {
+		position: relative;
+	}
+
+	.wid-info-umum .content-widget .button {
+		position: absolute;
+		right: 20px;
+		bottom: 5px;
+	}
+
+	.wid-info-umum .content-widget h3, .wid-info-umum .content-widget p {
+		margin-bottom: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 980px) {
+	.karir-listing li > a > p {
+		padding-left: 15px;
+		padding-top: 14px;
+	}
+
+	.bg-manfaat-right {
+		width: 80px;
+	}
+
+	.bg-manfaat-right span {
+		right: 6px;
+		bottom: 6px;
+	}
+}
+
+@media only screen and (max-width: 935px) {
+	#fixed-navigation ul > li {
+		padding-left: 12px !important;
+		padding-right: 12px !important;
+	}
+
+	#fixed-navigation ul > li.logo-fix-nav {
+		padding-left: 12px !important;
+		padding-right: 12px !important;
+	}
+
+	#search-wrap #searchform {
+		width: 305px;
+	}
+
+	.page-karir .switch-color li {
+		height: 300px!important;
+	}
+
+	.page-tentang-axa-mandiri #karir-section .large-5 {
+		width: 50%;
+	}
+
+	/*#direktori-widget, #karir-widget {
+		position: relative;
+	}
+
+	#direktori-widget .img-content, #karir-widget .img-content {
+		display: none;
+	}
+
+	#direktori-widget #pilih-dir {
+		position: absolute;
+		bottom: 0;
+		width: 84%;
+	}
+
+	#direktori-widget #pilih-direktori {
+		width: 60%;
+	}
+
+	#karir-widget .button.right {
+		position: absolute;
+		bottom: 0;
+		right: 20px;
+	}*/
+
+	/*#direktori-widget form, #karir-widget .button{
+		position: absolute;
+		bottom: 0;
+		width: 83.5%;
+	}
+
+	#direktori-widget form {
+
+	}*/
+}
+
+@media only screen and (max-width: 900px) {
+	.karir-listing.large-block-grid-4>li {
+		width: 50%;
+	}
+}
+
+/*ipad potrait*/
+@media only screen and (max-width: 800px) {
+	#popupContact {
+		height: 210px;
+		width: 290px !important;
+		right: 5px !important;
+		top: 80px !important;
+	}
+	.blue-sections-cover-left {
+		background: url("../images/bg-cover-blue.jpg") center center no-repeat;
+		width: 100%;
+	}
+
+	.blue-sections-cover-right {
+		display: none;
+	}
+
+	#main-navigation {
+		display: none;
+	}
+
+
+	.separationpage {
+		background: url(../images/bg-separationpage-mobile.jpg) top center no-repeat;
+	}
+
+	.separationpage #panel {
+		width: 90%;
+		height: auto;
+		background: none;
+	}
+
+	.separationpage #panel .box {
+		background: rgba(255, 255, 255, 0.7);
+		border-radius: 5px 5px 0 0;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.separationpage .left, .separationpage .right {
+		width: 50%;
+		position: relative;
+	}
+
+	.separationpage .box .btn {
+		display: none;
+	}
+
+	.separationpage .left p {
+		padding-right: 30px;
+	}
+
+	.separationpage .right p {
+		padding-left: 30px;
+	}
+
+	.separationpage .bottomSection {
+		display: block !important;
+		margin-top: -5px;
+	}
+
+	.separationpage .bottomSection .btn.left  {
+		display: block;
+		background: #1a3788;
+		border-radius: 0 0 0 5px;
+		padding: 15px 30px !important;
+		color: #fff;
+	}
+
+	.separationpage .bottomSection .btn.right  {
+		display: block;
+		background: #f8b928;
+		border-radius: 0 0 5px 0;
+		padding: 15px 30px !important;
+		text-align: right;
+		color: #fff;
+	}
+
+	.karir-listing li strong {
+		font-size: 12px;
+	}
+
+
+
+	#footer .row {
+		padding: 0 15px;
+	}
+
+	#page-container .sections {	
+		/*width: 100%;*/
+		/*overflow-x: scroll;
+		overflow-y: hidden;*/
+		/*border: 1px solid #ddd;*/
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.page-media #contact-section > div.right.large-7 > .large-6 {
+		float: left !important;
+		width: 100%;
+	}
+
+	.page-tentang-axa-mandiri #content-details,
+	.page-tentang-axa-mandiri #karir-section,
+	.page-tentang-axa-mandiri #page-container #kontak.sections {
+		padding: 15px;
+	}
+
+	.page-tentang-axa-mandiri #content-details h3 {
+		margin-top: 10px;
+	}
+
+	.page-tentang-axa-mandiri #nilai-axa.blue-sections,
+	.page-tentang-axa-mandiri #karir-section{
+		min-height: inherit;
+	}
+
+	.page-tentang-axa-mandiri #nilai-axa.blue-sections {
+		background-image: none;
+		padding: 15px!important;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.mobile-content {display: none !important;}
+}
+
+@media only screen and (max-width: 800px) {
+	/*.pilihan-karir .karir-listing li .bg-manfaat-right {
+		display: none;
+	}*/
+
+	.show-for-large-only #customerCare, #customercare-fixed #customerCare {
+		display: none;
+	}
+
+	#direktori-widget .content-text {
+		margin-bottom: 10px;
+	}
+
+	#direktori-widget #pilih-dir {
+		position: inherit;
+		width: 100%;
+	}
+
+	#direktori-widget #pilih-direktori {
+		width: 85%;
+	}
+
+	.banner {
+		display: none;
+	}
+
+	#customerCare {
+		top: 10px;
+	}
+
+	#page-container {
+		background-image: none;
+	}
+
+	.separationpage #panel .box  {
+		padding: 15px;
+	}
+
+	
+	.columns {
+		float: none !important;
+	}
+
+	.large-6 {
+		width: 100%;
+		height: auto;
+	}
+
+	.page-layanan-nasabah .content-widget, .page-customer-quick-center .content-widget,.h-300 {height: auto;}
+	#mandiricare .img_archive.left, #mobile-service .img_archive.left {display: block;}
+	#mandiricare .content-arcive, #mobile-service .content-arcive {float: none;}
+	#mandiricare .content-arcive .button-center, #mobile-service .content-arcive .button-center {
+		position: inherit;
+		bottom: inherit;
+		left: inherit;
+		margin: inherit;
+		right: inherit;
+		width:inherit;
+	}
+
+	#mandiricare .content-arcive .button-center .button,
+	#mobile-service .content-arcive .button-center .button {
+		width: 85px;
+	}
+
+	.single-post #page-head{
+		margin-top: 0;
+	}
+
+	.single-post #masthead {
+		padding: 0;
+		min-height: 0;
+	}
+
+	#page-head .box {
+		/*top: 15px !important;*/
+		left: 15px !important;
+		width: 180px;
+	}
+
+	/*#page-head .box p {
+		font-size: 14px !important;
+	}
+*/
+	#page-head .f-45 {
+		font-size: 22px !important;
+	}
+
+	#page-head .box.set-1 p {
+		font-size: 40px !important;
+	}
+
+	#page-head {
+		/*height: 140px;*/
+		overflow: hidden;
+	}
+
+	.separate-large {
+		width: 326px;
+		height: 140px;
+		background: url("../images/separate-large.png") no-repeat right;
+	}
+
+	.single-klaim #page-head,.page-axa-mandiri-akses #page-head, .page-template-single-derek-dan-bantuan-php #page-head {
+		margin-top: 0;
+		background-position: top center !important;
+	}
+
+	.single-klaim #masthead h1,.page-axa-mandiri-akses #masthead h1, .page-template-single-derek-dan-bantuan-php #masthead h1 {
+		width: 100%;
+	}
+
+	.column-2 {
+		column-count: 1 !important;
+		column-gap: 30px !important;
+		-webkit-column-count: 1;
+		-webkit-column-gap: 1px !important;
+		-moz-column-count: 1 !important;
+		-moz-column-gap: 30px !important;
+		-o-column-count: 1 !important;
+		-o-column-gap: 30px !important;
+	}
+
+	.desktop-content {
+		display: none !important;
+	}
+
+	#fixed-navigation {
+		display: none !important;
+	}
+/*	.off-canvas-wrap.move-right .inner-wrap:before,
+	.off-canvas-wrap.move-left .inner-wrap:before {
+		content: "";
+		position:absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		display: block;
+		background: rgba(0, 0, 0, 0.77);
+		z-index: 100000;
+	}*/
+
+	.move-right a.exit-off-canvas, .move-left a.exit-off-canvas {
+		box-shadow: none !important;
+		background: rgba(0, 0, 0, 0.8);
+		transition:none;
+	}
+
+	ul.off-canvas-list #searchform {
+		width: 215px;
+	}
+	#mobile-navigation #logo {
+		float: none;
+		background: url(../images/new-logo.png)no-repeat;
+		background-position: center;
+		background-size: contain;
+		display: block;
+		width: 232px;
+		height: 50px;
+		text-indent: -9999em;
+		margin: 6px auto 0;
+	}
+
+	.offcanvas-active{
+		overflow: hidden;
+	}
+
+	nav.tab-bar {
+		height: 65px;
+		background: #fff;
+	}
+
+	a.menu-icon {
+		color: #b0b0af;
+	}
+
+	a.menu-icon span {
+		box-shadow: 0 10px 0 1px #b0b0af,0 16px 0 1px #b0b0af,0 22px 0 1px #b0b0af;
+		-webkit-box-shadow:0 10px 0 1px #b0b0af,0 16px 0 1px #b0b0af,0 22px 0 1px #b0b0af;
+	}
+
+	section.left-small, section.right-small {
+		border-right: 0px;
+		border-left :0px;
+		box-shadow :none;
+		margin-top: 10px;
+	}
+
+	section.right-small .right-off-canvas-toggle .fa {
+		width: 45px;
+		height: 45px;
+	}
+
+	.off-canvas-wrap {
+		background-color: #0f2e86;
+	}
+
+	.page-home .off-canvas-wrap, .page-bisnis .off-canvas-wrap, .page-rumah-sakit .off-canvas-wrap, .page-bengkel .off-canvas-wrap, .page-direktori 
+	.off-canvas-wrap, .page-direktori-search .off-canvas-wrap, .page-kantorcabang .off-canvas-wrap, .page-layanan-nasabah .off-canvas-wrap {
+		background: #fff;
+	}
+
+	ul.off-canvas-list li a {
+		display: block;
+		padding: 0 0 8px;
+		color: rgba(255, 255, 255, 0.7);
+		border-bottom: 1px solid #30488D;
+		margin: 5px 15px;
+		font-size: 14px;
+	}
+
+	ul.off-canvas-list .dark {
+		background: #0A2162;
+		padding: 10px 0;
+	}
+
+	#mobile-navigation.fixed {
+		box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.32);
+		-webkit-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.32);
+		-moz-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.32);
+		-o-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.32);
+		}
+
+	#mobile-navigation .off-canvas-list li:last-child a,
+	.other-menu a{
+		border-bottom: 0px solid #30488D !important;
+	}
+
+	.right-off-canvas-toggle {
+		font-size: 22px;
+		color: #b0b0af;
+	}
+
+	.right-off-canvas-toggle:hover{
+		color: #7A7A7A;
+	}
+
+	#mobile-navigation .off-canvas-list li {
+		clear: both;
+		display: block;
+	}
+
+	.menu-search {
+		padding: .66667rem;
+	}
+
+	#searchform {
+		height: 28px;
+		float: none;
+		overflow: hidden;
+		position: relative;
+		border: 1px solid #E2E7F5;
+		border-radius: 5px;
+		margin-top: 0px;
+		margin: 0;
+	}
+
+	#searchsubmit {
+		z-index: 100;
+		top: 8px;
+		width: 12px;
+		height: 12px;
+	}
+
+	#searchform input {
+		/*background: #fff;*/
+		height: 28px;
+		-webkit-appearance:none;
+		border-radius: 3px;
+	}
+
+	.sub-menu-first {
+		height: 0;
+		overflow: hidden;
+	}
+
+	#qtranslate-chooser {
+		padding: 0;
+		margin: 0 15px;
+	}
+
+	#qtranslate-chooser a{
+		margin: 0;
+		padding: 0;
+	}
+
+	.other-menu.first-child{
+		margin-top: 15px;
+	}
+
+	.sub-menu-second, .fa.fa-angle-up {
+		display: none;
+	}
+
+	.menu-item.parent-menu.expanded a{
+		/*color: red;*/
+		border-bottom: 0px !important;
+	}
+
+	.menu-item.parent-menu.expanded .arrow-up {
+		display: inline-block;
+	}
+
+	.menu-item.parent-menu.expanded .arrow-down {
+		display: none;
+	}
+
+
+	.menu-item.parent-menu.expanded .sub-menu-first{
+		height: auto;
+	}
+
+	.sub-parent.expanded > .sub-menu-second {
+		display: block;
+	}
+
+	.sub-parent.expanded .arrows-up{
+		display: inline-block;
+	}
+
+	.sub-parent.expanded .arrows-down{
+		display: none;
+	}
+
+	.column, .columns{
+		padding: 0;
+		margin: 10px 0;
+		width: 100% !important;
+	}
+
+	#mainSlider, #slideContent, #slideContent li {
+		height: 400px;
+		background-size: cover;
+	}
+
+	#mainSlider .caption {
+		width: 50%;
+		top: 20%;
+	}
+
+	#mainSlider .caption h3 {
+		font-size: 20px;
+	}
+
+	#mainSlider .buttons i {
+		font-size: 20px;
+	}
+
+	#mainSlider .owl-buttons, #solusiWidget #intro:after {
+		display: none;
+	}
+
+	#mainSlider .buttons {
+		font-size: 15px;
+	}
+
+	#separate {
+		left: 0;
+		top: 15px;
+	}
+
+	#region-1 {
+		background-color: #fff;
+		padding: inherit;
+	}
+
+	#region-2 {
+		padding: 0 0 20px;
+	}
+
+	#layanan {
+		padding: 25px 15px;
+	}
+
+	#layanan .large-11 {
+		float: none;
+	}
+
+	#layanan h3 {
+		font-size: 20px;
+	}
+
+	#layanan ul , .page-karir .sections ul {
+		margin: 0 auto; 
+		/*width: 350px;*/
+	}
+
+	#layanan ul li {
+		border: 0px;
+		min-height: 0;
+		padding: 15px 20px;
+		margin:0;
+		display: inline-block;
+	}
+
+	/*#layanan ul li {
+		
+		border: 0px;
+		padding-bottom: 0;
+		margin: 0;
+		display: inline-block;
+	}*/
+
+	#solusiWidget ul li:hover .desc {
+		display: none !important;
+	}
+
+	#solusiWidget ul li:hover .icon {
+		display: block !important;
+	}
+
+	/*#kontak .fieldset .button-center {
+		margin-top: 10px;
+		clear: both;
+		width: 72px;
+		margin: 10px auto 10px;
+		position: relative;
+		bottom: 0;
+	}*/
+
+	/*#kontak form .fieldset span.left {
+		float: none!important;
+		text-align: center;
+		margin-bottom: 5px;
+	}*/
+
+	#kontak form .fieldset {
+		float: none;
+	}
+
+	#kontak form .fieldset span.left {
+		margin: 10px auto;
+		width: 23px;
+		float: none!important;
+	}
+
+	#kontak form .fieldset .linkedin {
+		width: 181px;
+		margin: 0 auto;
+	}
+
+	/*#kontak form .fieldset .btn-linkedin {
+		text-align: center;
+		margin: 0 auto;
+		float: none !important;
+	}*/
+
+	.fieldset .kirim-karir {
+		margin: 0;
+	}
+
+/*	#layanan ul li:after {
+		border-bottom: 1px solid #E0E0E0;
+		content: "";
+		position: absolute;
+		bottom: -5px;
+		width: 100%;
+		left: 0;
+	}*/
+
+	#layanan ul li:last-child:after{
+		border-bottom: 0px;
+	}
+
+	#layanan .icon {
+		margin: 0 auto;
+		float: none;
+	}
+
+	#layanan.mobile .icon {
+		background-position: -252px -63px!important;
+		float: none;
+		width: 72px;
+	}
+
+	#layanan.mobile {
+		border-radius: 5px;
+	}
+
+	#layanan.mobile .details {
+		text-align: center;
+		float: none;
+		width: auto;
+	}
+
+	#layanan h4,
+	#layanan p {
+		text-align: center;
+	}
+
+
+	#layanan .details {
+		margin: 0;
+		text-align: center;
+		float: none;
+	}
+
+	#layanan .klaim .icon {
+		background-position: -336px -64px;
+	}
+
+	#layanan .akses .icon {
+		background-position: -259px -64px;
+	}
+
+	.row.solusiContainer {
+		padding: 0;
+	}
+
+
+	#unitWidget {
+		height: 202px;
+	}
+
+	#unitWidget .wrap:before {
+		width: 90px;
+		z-index: 1;
+	}
+
+	#unitWidget .row {
+		padding: 0 15px;
+	}
+
+	#unitWidget .wrap {
+		height: 202px;
+		background: #F5F5F5;
+	}
+
+	#ulip-product {
+		width: auto;
+		float: none;
+		margin: auto;
+	}
+
+	#ulip-product select {
+		margin-top: 15px;
+	}
+
+	#unitWidget .boxContainer.clearfix {
+		float: none;
+	}
+
+	.slideshow-unit {
+		width: auto !important;
+		height: 58px;
+		margin: auto;
+	}
+	
+	.unit-item li {
+		display: block;
+		margin: auto;
+	}
+
+	.slideshow-unit .unit .date {
+		margin-left: 0;
+		margin-right: 15px;
+	}
+	#unitWidget .nextprev {
+		position: absolute;
+		right: 20px;
+		top: auto;
+		bottom: -3px;
+		z-index: 100;
+	}
+
+	#unitWidget .nextprev .fa.fa-angle-up {
+		display: block !important;
+	}
+
+	#unitWidget.expanded, .bottom-widget {
+		height: auto;
+	}
+	
+	#solusiWidget {
+		height: auto;
+		text-align: center;
+		padding: 40px 0;
+		margin: 0;
+		border-top: 1px solid #cbd2e8;
+	}
+
+
+	#solusiWidget ul li {
+		/*width: 144px;*/
+		/*height: 110px;*/
+		margin-bottom: 10px;
+		position: relative;
+	}
+
+	#solusiWidget ul li:nth-child(2){
+		border-right: 0px;
+	}
+
+	/*#solusiWidget li:nth-child(1):after,
+	#solusiWidget li:nth-child(2):after{
+		border-bottom: 1px solid #DAE0F3;
+		content: "";
+		position: absolute;
+		bottom: -5px;
+		width: 100%;
+		left: -2px;
+	}*/
+
+	#solusiWidget ul {
+		list-style: none;
+		margin: 0 auto;
+		/*width: 378px;*/
+		float: none;
+		padding: 0;
+	}
+
+/*	#solusiWidget .img_background {
+		width: 378px;
+	}*/
+
+	#layanan .button.blue {
+		min-width: 120px;
+		position: inherit;
+		margin: 0 0 15px;
+		bottom: inherit;
+	}
+
+
+	.slideshow-unit .unit-item li:nth-child(1) .product-title {
+		position: inherit;
+		top: 0;
+		margin-bottom: 2px;
+		white-space: normal;
+		width: auto;
+		overflow: inherit;
+		text-overflow: inherit;
+	}
+
+	#chartContainer .loading {
+		background: #F4F4F4!important;
+	}
+
+	#media-nav {
+		display: none;
+	}
+
+	#blog {
+		margin: 20px auto;
+	}
+
+	#blog .siaran-pers {
+		min-height: 279px;
+	}
+
+	#direktori-widget .content-text p, #karir-widget .content-text p {
+		margin-bottom: 20px;
+	}
+
+	.page-home #direktori-widget, #karir-widget {
+		height: 200px;
+	}
+
+	/*.slideshow-unit .unit-item li:nth-child(1) .product-title{
+		width: 155px;
+		line-height: 0.9em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}*/
+
+	/* Solusi Page
+	==============================================*/
+	#masthead {
+		min-height: 200px;
+		padding: 0 15px 40px;
+	}
+
+	#header-image {
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-size: cover;
+		bottom: 0;
+		background-position: 50% center;
+	}
+
+	.page-hubungi-kami #header-image {
+		background-position: 100% center;
+	}
+
+	#masthead h1 {
+		position: relative;
+		z-index: 100;
+		width: 50%;
+	}
+
+	.page-tentang-axa-mandiri #masthead h1 {
+		width: 90%;
+	}
+
+	#masthead h2 {
+		display: none;
+	}
+
+	.sections h3 , #body-2 h3, #content-details h3{
+		margin-top: 20px;
+		margin-bottom: 15px;
+		line-height: 1.3;
+	}
+
+	#product-listing h3{
+		margin-bottom: 0;
+	}
+
+	#product-listing h4 {
+		margin-bottom: 10px;
+	}
+
+	#product-listing > a.button {
+		display: none;
+	}
+
+	#content-details, .blue-sections, #page-container .sections {
+		border-radius: 0;
+		padding: 15px;
+	}
+
+	#page-container .p-all-60 {
+		padding: 60px 15px !important;
+	}
+
+	#content-details .slides, #product-listing .button.floating {
+		display: none;
+	}
+
+	.single-product_matrix #masthead {
+		padding: 0;
+		min-height: 150px;
+	}
+
+	.single-product_matrix #page-head {
+		margin: 0;
+		height: 150px !important;
+	}
+
+	#social-header-content {
+		display: none;
+	}
+
+	#page-head .box.set-1 .share-buttons {
+		display: block;
+	}
+
+	#page-head .box.set-1 .share-buttons .icons {
+		padding: 4px 4px !important;
+		font-size: 12px !important;
+		margin: 12px 1px !important;
+		width: 26px !important;
+		height: 26px !important;
+		line-height: 20px  !important;
+	}
+
+	#page-head{
+		background-position: top center !important;
+	}
+
+	.separate-left-product {
+		width: 221px;
+		background-position-x: -65px;
+		background-position-y: 50%;
+	}
+
+	.separate-right-product {
+		background-position-x: 70px;
+		background-position-y: 50%;
+	}
+
+	#text-top-solusi .bghorizontal-yellow {
+		margin-top: 0;
+		width: 95%!important;
+		padding: 15px;
+	}
+
+	#manfaat {
+		border-bottom-right-radius: 43px !important;
+	}
+
+	/*#manfaat-slide .elements .box {
+		height: auto;
+	}*/
+
+	#kontak #floating {display: none;}
+
+	/* Layanan Nasabah
+	==============================================*/
+	#search-premi{
+		background: #f8f9fb;
+		margin-bottom: 0;	
+		border-radius: 0;
+		height: auto;
+	}
+
+	#search-premi form {
+		margin-bottom: 0;
+	}
+
+	#search-premi .buttonContainer.desktop-content {
+		display: block!important;
+		float: none;
+		width: 241px;
+		margin: 0 auto;
+	}
+
+	#premi-polis {
+		width: 100% !important;
+	}
+
+	.page-layanan-nasabah .content-box {
+		padding: 0;
+	}
+
+	#page-container #page-half > div {
+		margin: 30px 0;
+	}
+
+	#page-half.sections {
+		border-bottom: none;
+	}
+
+	#page-half #faq-list.desktop-content, #page-half aside.desktop-content {
+		display: block!important;
+	}
+
+	#page-half .img_archive,
+	#mandiricare .img_archive,
+	#mobile-service .img_archive{
+		margin-bottom: 15px !important;
+	}
+
+	#mobile-service .content-widget .content-arcive > a {
+		width: 100%;
+	}
+
+	/*.page-layanan-nasabah #page-container .grey {
+		background: #fff;
+	}*/
+
+	.w-322 {width: auto}
+
+	.widget {
+		margin: 0 auto 10px;	
+	}
+
+	.widget > div {
+		width: auto;
+	}
+
+	.bg-separator {
+		background: #f2f1f1 !important;
+	}
+
+	.page-reksa-dana .content-box{
+		padding: 15px;
+	}
+
+	.page-informasi-umum .button.absolute,
+	.page-customer-care .button.absolute,
+	.page-lain-lain .button.absolute {
+		position: relative;
+		margin-left: 10px;
+	}
+
+	.two-list-content li a {
+		height: auto;
+		padding: 5px 20px;
+	}
+
+	.wid-info-umum .content-widget .button {
+		position: initial;
+		width: 125px;
+	}
+
+	.page-bantuan-jalan-raya #archive-premi .button.blue.small {
+		position: initial;
+	}
+
+	.page-bantuan-jalan-raya #bantuan .button_left {
+		margin-bottom: 20px;
+	}
+
+	.page-bantuan-jalan-raya #archive-premi .button.blue.small {
+		bottom: 0;
+		right: 0;
+	}
+
+
+	/* Tentang AXA
+	==============================================*/
+	#content-details #icons, .career-list{
+		display: none;
+	}
+
+	#nilai-axa, #axa-group, #karir-section, #contact-section {
+		padding: 15px;
+	}
+
+	#nilai-axa #icons{
+		display: none;
+	}
+
+	#axa-group ul li {
+		width: auto;
+		float: none !important;
+		clear: both;
+		min-height: inherit;
+	}
+
+	#axa-group ul, #kontak form {
+		margin: 0;
+	}
+
+	#axa-group ul h4 {
+		min-height: inherit;
+		height: auto;
+	}
+
+	#unitWidget #title:after {
+		border: 0 !important;
+		width: 87px;
+		right: -81px;
+	}
+
+	#unitWidget #title {
+		margin: 0;
+		background: none;
+	}
+
+	.breadcrumbs {
+		padding: 30px 15px;
+	}
+
+	#kontak .transparent-separate  img {
+		display: none;
+	}
+
+	
+
+	/* Direktori
+	=============================================*/
+	#menu-direktori.bg-direktori {
+		margin-bottom: 0;
+		height: auto;
+		background-image: none;
+		background-color: #fff;
+	}
+
+	.direktori-list .details {
+		width: 100% !important;
+	}
+
+	.direktori-list .map-details {
+		display: none;
+	}
+
+	.mobile-map-details {
+		display: block;
+	}
+
+	#mobile-map {
+		background: url(../images/header-map.jpg) no-repeat center center;
+		height: 280px;
+	}
+
+	#searchdir {
+		height: 244px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#selectEntity li {
+		width: 100%;
+		margin-left: 10px;
+	}
+
+	.page-direktori #searchdir, .page-direktori-search #searchdir {
+		margin-top: -157px;
+		height: 70px;
+	}
+
+	.wp-pagenavi a, .wp-pagenavi span { 
+		padding: 5px !important;
+	}
+
+	.single-faq #masthead {
+		padding: 0;
+	}
+
+	.single-faq #page-head {
+		margin-top: 0;
+	}
+
+	#container-selectEntity {
+		top: 67px;
+		background-color: #eceeef;
+		left: 0;
+		padding: 0 15px;
+		right: 0;
+		position: absolute;
+		width: 100%;
+	}
+
+	#container-selectEntity #column-entity {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	#container-selectEntity #column-product {
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+
+	/* Footer
+	=============================================*/
+
+	#footer-mobile .row {
+		padding: 0 15px;
+	}
+
+	#footer-mobile {
+		/*height: 119px;*/
+		background: url(../images/bg-footer-mobile.jpg) center no-repeat;
+		text-align: center;
+		padding: 25px 0;
+	}
+
+	#footer-mobile select{
+		margin-bottom: 10px;
+	}
+
+	#footer-mobile .menu {
+		margin: 0;
+	}
+
+	#footer-mobile .menu li {
+		display: inline-block;
+		font-size: 12px;
+	}
+
+	#footer-mobile .menu li a{
+		color: #FFF;
+		border-right: 1px solid #FFF;
+		height: 14px;
+		padding: 0 10px;
+	}
+
+	#footer-mobile .menu li a:hover{
+		color: red;
+	}
+
+	#footer-mobile .menu li:last-child a{
+		border: 0px;
+	}
+
+	/*#footer .main-sites, #social-footer .social-icons {
+		float: left !important;
+	}*/
+
+	/*#footer p {
+		float: none;
+	}
+*/
+	#footer .main-sites {
+		width: 180px;
+	}
+
+	#footer #footer-customer {
+		float: right;
+		width: 166px;
+	}
+
+	#footer .headerphone{
+		width: 180px;
+		float: right;
+	}
+
+
+	#footer #temukan{
+		width: 114px;
+		float: right;
+	}
+
+	.footer-menu ul {
+		margin-right: 10px !important;
+		margin-left: 12px;
+	}
+
+	#link-cepat-footer {
+		width: 60%!important;
+		display: block;
+		float: left!important;
+	}
+
+	#customer-care-footer {
+		width: 40%!important;
+		display: block;
+		float: right!important;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	#customercare-fixed {
+		display: none !important;
+	}
+
+	#contact-section .show-for-large-only {
+		display: block!important;
+	}
+
+	#wrapper section .pilihan-karir {
+		padding: 15px!important;
+	}
+
+	.bg-manfaat-right {
+		width: 90px;
+	}
+
+	.bg-manfaat-right span {
+		right: 15px;
+		bottom: 10px;
+	}
+
+	.karir-listing li > a > p {
+		padding: 20px;
+	}
+
+	.page-karir .switch-color li {
+		height: 220px !important;
+	}
+
+	#mainSlider .buttons {
+		display: inline-table;
+	}
+
+	.wpcf7-form-control.wpcf7-captchar {
+		width: 39%;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.karir-listing.large-block-grid-4>li {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	#footer .main-sites, #social-footer .social-icons, #footer-customer, #footer .headerphone, #footer #temukan {
+		float: left !important;
+	}
+
+	#footer .headerphone {
+		float: none !important;
+	}
+
+	#link-cepat-footer,
+	#customer-care-footer {
+		width: 100% !important;
+		float: none !important;
+	}
+
+	#link-cepat-footer {
+		margin-bottom: 0;
+	}
+
+	#customer-care-footer {
+		margin-top: 0;
+	}
+
+	#kontak .fieldset .button-center {
+		margin-top: 10px; 
+		clear: both; 
+		width: 72px; 
+		margin: 10px auto 10px; 
+		position: relative; 
+		bottom: 0; 
+	}
+
+	/*#kontak form .fieldset span.left {
+		float: none!important;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+*/
+	#kontak form .fieldset .btn-linkedin {
+		margin-bottom: 10px;
+	}
+
+	#footer {
+		background: url("../images/vector-background.jpg") top center no-repeat;
+	}
+
+	#direktori-widget .img-content, #karir-widget .img-content {
+		display: none;
+	}
+
+	#direktori-widget #pilih-direktori {
+		width: 75%;
+	}
+
+	/*#direktori-widget .content-text p, #karir-widget .content-text p {
+		margin-bottom: 10px;
+	}*/
+}
+
+@media only screen and (max-width: 495px) {
+	#sliderBanner .row {
+		width: 81%;
+	}
+}
+
+
+@media only screen and (max-width: 480px) {
+	#page-head .box.set-1 p {
+		font-size: 25px !important;
+	}
+	.separationpage {
+		background-position: top center;
+		background-image: url(../images/bg-separationpage-mobilesmall.jpg);
+	}
+	.separationpage #panel .box p {
+		display: none;
+	}
+
+	.separationpage .left img {
+		padding-right: 10px;
+	}
+
+	.separationpage .right img {
+		padding-left: 10px;
+		max-width: 80%;
+	}
+
+	.separationpage .bottomSection .btn.right,
+	.separationpage .bottomSection .btn.left {
+		padding: 10px 15px !important
+	}
+
+	.separationpage .bottomSection .btn {
+		font-size: 13px;
+	}
+
+	#mainSlider, #slideContent, #slideContent li, #mobile-slide, #mobile-slide li{
+		height: 300px;
+	}
+
+	#solusiWidget ul {
+		width: auto;
+	}
+
+	#layanan {
+		padding: 25px 0;
+	}
+
+	#layanan .row{
+		padding: 0;
+	}
+
+	#layanan ul{
+		width: 300px;
+	}
+
+	#layanan ul li {
+		border-bottom: 1px solid #CFCFCF;
+		/*padding: 0 20px;*/
+		display: inline-block;
+		margin: 0;
+	}
+
+	#layanan .details {
+		width: 172px;
+		float: left;
+		margin-left: 9px;
+		text-align: left;
+	}
+
+	#layanan .centered h2{
+		font-size: 14px;
+	}
+
+	#layanan h4, #layanan p {
+		text-align: left;
+	}
+
+	.teaser-slider{
+		    text-align: center;
+	}
+
+	#inspirasi-section .meta-info {
+		display: none;
+	}
+
+	#layanan .icon,
+	#layanan .button.blue{
+		float: left;
+	}
+
+	/*#layanan .premi .icon {
+		background-position: -420px -64px;
+	}
+
+	#layanan .klaim .icon {
+		background-position: -340px -64px;
+	}
+
+	#layanan .akses .icon {
+		background-position: -268px -64px;
+	}*/
+
+	#contact-form label {
+		width: 100%;
+		float: none;
+	}
+
+	.wpcf7-form-control-wrap {
+		width: 100% !important;
+	}
+
+	#visualization {
+		position: relative;
+		width: 100%;
+		padding-bottom: 100%;
+		vertical-align: middle;
+		overflow: hidden;
+	}
+
+	#ulipDateSelector .dateinput input {
+		width: 80%;
+	}
+
+	#kontak form .fieldset {
+		width: 100%;
+	}
+
+	#list-syarat .icon-125x100 {
+		display: none;
+	}
+
+	#list-syarat li .details {
+		width: 100% !important;
+		padding: 15px;
+	}
+
+	#list-syarat li .details p {
+		margin: 0;
+		font-size: 14px;
+	}
+
+	#list-syarat .bg-white {
+		height: auto;
+	}
+
+	#list-syarat li {
+		padding-bottom: 10px;
+		margin-bottom:0;
+	}
+
+	#mainSlider .buttons i {
+		font-size: 16px;
+		padding: 10px 10px;
+	}
+
+	#mainSlider .caption {
+		width: 70%;
+		top: 20%;
+	}
+
+	#brochure-download .small-block-grid-2 > li {
+		width: 100%;
+	}
+	#archive-premi {
+		padding: 10px 25px;
+	}
+
+	.page-bantuan-jalan-raya #archive-premi {
+		padding: 35px 25px;
+	}
+
+	.page-formulir .pdf-list strong {
+		width: 210px;
+	}
+
+	#page-half .img_archive,
+	#mandiricare .img_archive,
+	#mobile-service .img_archive {
+		margin: 0 auto 10px;
+		float: none!important;
+		width: 61px;
+	}
+
+	#mandiricare .content-arcive .button-center, #mobile-service .content-arcive .button-center {
+		/*position: inherit;
+		bottom: inherit;
+		left: inherit;
+		right: inherit;
+		width: 100px;*/
+		/*margin: 0 auto;*/
+	}
+
+	/*#page-half .img_archive img {
+		padding: 0;
+	}*/
+
+	#page-half .img_archive img,
+	#archive-premi .img_archive img, 
+	#mandiricare .img_archive img,
+	#mobile-service .img_archive img {
+		padding: 0!important;
+	}
+
+	.button-center {
+		margin-top: 10px;
+		clear: both;
+		position: relative;
+		bottom: 0;
+	}
+
+	#page-half .content-widget .content-arcive p {
+		float: left;
+	}
+
+	#mandiricare .content-widget .content-arcive .button,	
+	#mobile-service .content-widget .content-arcive .button,
+	#page-half .content-widget .content-arcive .button {
+		float: none;
+		margin: 0 auto;
+		display: inherit;
+	}
+
+	#contact-section {
+		background: none;
+	}
+
+	#contact-section .transparent-separate img {
+		display: none;
+	}
+
+	#contact-section.background-vector {
+		background: url("../images/vector-background.jpg") top center no-repeat;
+	}
+
+	#product-listing-mobile a.button {
+		float: right;
+	}
+
+	#page-head .box {
+		width: 150px;
+	}
+
+	#page-head .box.set-1 .share-buttons .icons {
+		padding: 4px 3px;
+		font-size: 17px;
+		margin: 7px 1px;
+		width: 25px;
+		height: 25px;
+	}
+
+	#solusiWidget .img_background {
+	/*	width: 305px;*/
+		height: 172px;
+		margin: 0 auto;
+	}
+
+	.bg-cover-left-solusiindex {
+		background-position-x: 0px;
+		background-position-y: -25px;
+		height: 172px;
+		width: 127px;
+	}
+
+	#axa-group ul h4 {
+		padding-left: 0;
+	}
+
+	#axa-group ul .yellow-switch {
+		display: none;
+	}
+
+	.page-home #direktori-widget, #karir-widget {
+		height: 215px;
+	}
+
+	#direktori-widget #pilih-direktori {
+		width: 67%;
+	}
+
+	#sidebar-socmed.background-vector .button {
+		width: 68%;
+	}
+
+	#sidebar-socmed.background-vector .socmend-sidebar {
+		width: 100%;
+	}
+
+
+	/*#direktori-widget #pilih-direktori {
+		width: 100%;
+	}*/
+}
+
+@media only screen and (max-width: 410px) {
+	#sliderBanner .row {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 325px) { 
+	#ytvideo-mobile {
+		height: 300px !important;
+	}
+
+	#solusiWidget .img_background {
+		/*width: 280px;*/
+	}
+}
+
+ul.off-canvas-list{overflow-y: scroll;height: 88%;}

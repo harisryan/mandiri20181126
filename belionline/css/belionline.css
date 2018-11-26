@@ -1,0 +1,395 @@
+p{
+	font-size:1em!important;
+}
+.product-table{
+	width:60%;
+	border: none;
+	padding:5px;
+	margin-top: 5px;
+}
+table tr th {
+	font-size:14px!important;
+	color:white;
+}
+table tr td{
+	font-size:14px!important;
+	background-color:white!important;
+	padding:5px;
+	color: #626269;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.product-table-right{
+	text-align: right;
+}
+.panel-body ol{
+	font-size:1em!important;
+}
+.panel-body ul{
+	font-size:1em!important;
+}
+#page-container {
+	min-height: 500px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: #dbe0ed;
+	background-size: contain;	
+}
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-moz-keyframes fadein { /* Firefox */
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-o-keyframes fadein { /* Opera */
+	from {
+		opacity:0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.newrow{
+	border:0px solid black;
+	margin-top:250px!important;
+	position:absolute;
+	min-height:140px;
+	width:100%;
+	
+}
+.row-bl{
+	background-color:white!important;
+	min-height:150px;
+	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+	padding:0!important;
+	border-radius: 7px 7px 0px 0px;
+}
+.header-main-title{
+	height:50px;
+	width:400px;
+	background:linear-gradient(to right, #fcac17 0%, #feb413 14%, #fbb611 14%, #fcb910 19%, #fcba0c 20%, #fdbe0e 23%, #fec20c 28%, #fec409 28%, #fdc607 31%, #fecd06 40%, #fece02 40%, #ffd302 47%, #fed201 54%, #ffcb05 61%, #feca05 66%, #fec806 68%, #fec40b 70%, #fdc10b 75%, #fdbe0e 76%, #fcb80f 85%, #fbb613 85%, #fbb613 87%, #fdb314 87%, #fcac17 100%);
+	border-radius: 7px 0 20px 0;
+	font-color:blue;			
+	text-indent: 20px;
+    margin-top: -3px;
+}
+.header-main-title-msp{
+	height:50px;
+	width: 300px;
+	background:linear-gradient(to right, #fcac17 0%, #feb413 14%, #fbb611 14%, #fcb910 19%, #fcba0c 20%, #fdbe0e 23%, #fec20c 28%, #fec409 28%, #fdc607 31%, #fecd06 40%, #fece02 40%, #ffd302 47%, #fed201 54%, #ffcb05 61%, #feca05 66%, #fec806 68%, #fec40b 70%, #fdc10b 75%, #fdbe0e 76%, #fcb80f 85%, #fbb613 85%, #fbb613 87%, #fdb314 87%, #fcac17 100%);
+	border-radius: 7px 0 20px 0;
+	font-color:blue;			
+	text-indent: 20px;
+    margin-top: -3px;
+}
+.header-main-title h5{
+	line-height: 50px!important;
+}
+.header-main-title-msp h5{
+	line-height: 50px!important;
+}
+.collapsing {
+	transition: height 0.6s;
+}
+img[width="1"] {display: none;}
+#fixed-navigation .row {
+	max-width: 73.75em;
+}
+
+.search-menu {
+	position: relative;
+}
+
+#search-wrap {
+	position: absolute;
+	bottom: -71px;
+	left: 0;
+	padding: 20px 15px;
+	background: white;
+	display: none;
+	border: 1px solid #ecf1fc;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#fixed-navigation ul.other.active #search-wrap {
+	display: block;
+} 
+.panel-default{
+	border-radius: 10px!important;	
+}
+.panel-default>.panel-heading {
+	min-height:210px;
+	background-color: transparent;
+	border-color: transparent;
+}
+.panel-default>.panel-heading-bg {
+	background:url('../images/acc-down.png');
+	background-repeat:no-repeat;
+	background-position:bottom;
+	background-size: contain;
+	cursor:pointer;
+	
+}
+.panel-default>.panel-heading+.panel-collapse .panel-body{
+	font-size:14px;
+	padding-top:0px!important;
+	border-top:none;
+	margin-bottom: -25px;
+}
+.panel-footer{
+	height:36px;
+	background-color:white;
+	background: url('../images/acc-up.png') ;
+	background-repeat:no-repeat;
+	background-position:bottom;
+	background-size: cover;
+	cursor:pointer;
+}
+.panel-footer-bg{
+	background: url('../images/acc-up.png') 0px 37px!important;
+	background-repeat:no-repeat;
+	background-position:bottom;
+	background-size: auto;
+	
+}
+div.div-relative {
+	position: relative;
+	width: 100%;
+	
+	display:block;
+} 
+.div-relative-mobile{
+	display:none;
+	margin-top:10px;
+	margin-bottom: -25px;
+}
+div.div-absolute {
+	position: absolute;
+	top: 55px;
+	right: 0;
+	max-width: 200px;
+}
+.panel-body p{
+	font-size:1em!important;
+}
+.product-footer-risk{
+	background-color: #eff1f5;
+	margin-left: -30px;
+	margin-right: -30px;
+	margin-bottom: 20px;
+	padding-top: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 15px;
+}
+.title-one{
+	font-size:27px;
+	font-weight:bold;
+	letter-spacing: 1px;
+}
+.title-two{
+	font-size:20px;
+	letter-spacing: 1px;
+}
+.title-three-desktop, .title-three-mobile {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd200;
+	letter-spacing: 1px;
+}
+.title-three-mobile {
+	display:none;
+}
+#collapse1{
+	text-decoration:none;
+	text-transform:none;
+}
+
+#title-main:hover{
+	color:#053584!important;
+}
+#title-main:visited{
+	color:#053584!important;
+}
+.title-main{
+	margin-bottom: 5px;
+}
+.td-title{
+	color:white;
+	min-height: 12px!important;
+}
+.sub-page-empty-mppt{
+	background:url('../images/banner.jpg');min-height:320px;background-position: center;background-repeat:no-repeat;background-size: cover;
+}
+.sub-page-empty-msp{
+	background:url('../images/banner-MSP.jpg');min-height:320px;background-position: center;background-repeat:no-repeat;background-size: cover;
+}
+.sub-page-title{
+	background-color:white;
+	border-radius:10px 10px 0px 0px;
+	margin-bottom:0px;
+	margin-top: -80px;
+	position: relative;
+}
+.menu-color--yellow{
+	color: #ffd200!important;
+}
+.accordion{
+	padding:30px;
+}
+.f14{
+	font-size:14px!important;
+}
+table.plan-table{
+	width:35%;
+	border:none!important;
+}
+table.plan-table th{
+	background-color:#ecb700!important;
+	border: 2px solid #ffffff;
+	border-radius:7px!important;
+	text-align:center!important;
+}
+table.plan-table td{
+	border-radius: 7px!important;
+    text-align: center!important;
+    border: 2px solid #ffffff;
+}
+table.plan-table td:nth-child(1) { background-color:rgb(162, 193, 208)!important; }
+table.plan-table td:nth-child(2) { background-color:rgba(161, 193, 207, 0.67)!important; }
+.title-manfaat{
+	font-size: 1.1em!important;
+}
+.button.red .fa{
+	background: rgba(255, 255, 255, 0)!important;
+	color: #ffffff!important;
+}
+.icon-manfaat-desktop{
+	list-style: none;
+	display: inline-flex;
+}
+.icon-manfaat-mobile{
+	display:none;
+}
+.panduan-belanja > .owl-controls > .owl-pagination >.owl-page span {
+	background: #de4f08;
+	margin-top: -80px;
+}
+.iframe-loading{
+	min-height:500px;
+	background:url('../images/loader.gif') white !important;
+	background-repeat: no-repeat!important;
+	background-position: center!important;
+}
+/* mobile */
+@media(max-width:420px){	
+	.product-table {
+		width:100%;
+	}
+	div.div-relative{
+		display:none!important;
+	}
+	.div-relative-mobile{
+		display:block;
+	}
+	.accordion{
+		padding:0px;
+		margin-top: 20px;
+	}
+	.panel-group{
+		padding:10px!important;
+		margin-top:10px;
+	}
+	.panel-body{
+		padding:10px!important;
+		margin-top: -20px;
+		margin-bottom: -7px!important;
+	}
+	.panel-default>.panel-heading {
+		min-height:370px;
+		padding-left: 0px;
+		padding-right: 10px;
+	}
+	.panel-default>.panel-heading-bg {
+		background-position:bottom;
+		background-size: auto;
+	}
+	.panel-footer{
+		background-size: auto;
+	}
+	.sub-page-empty-mppt{
+		background:url('../images/Banner-mobile-MPPT.jpg');min-height:320px;background-position: center;background-repeat:no-repeat;background-size: cover;
+	}
+	.sub-page-empty-msp{
+		background:url('../images/Banner-mobile-MSP.jpg');min-height:320px;background-position: center;background-repeat:no-repeat;background-size: cover;
+	}
+	
+	.head-col-md-3{
+		padding-top:0px!important;
+	}
+	
+	.info-lengkap{
+		padding-bottom: 20px;
+		padding-top: 20px;
+		text-indent: 10px!important;
+	}
+	.icon-manfaat-ul{
+		list-style: none;display: inline-flex;
+	}
+	.icon-manfaat-desktop{
+		display:none;
+	}
+	.icon-manfaat-mobile{
+		list-style: none;
+		display:block;
+		margin-left: -5px;
+	}
+	.icon-manfaat-mobile img{
+		width:40px;
+	}
+	.accordion ul li{
+		text-align:left;
+	}
+	.li-icon-manfaat-mobile{
+		width: 50px;
+		display: inline;
+		height: 40px;
+		float: left;
+	}
+	.li-desc-icon-manfaat-mobile{
+		height: 50px;
+	}
+	.title-three-desktop{
+		display:none;
+	}
+	.title-three-mobile{
+		display:inline;
+	}
+	.col-md-7{
+		padding-top:5px;
+	}
+	.plan-desc{
+		margin-top: -45px;
+	}
+} 
+/* end mobile  */
