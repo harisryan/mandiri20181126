@@ -96,14 +96,14 @@ if( ($brochure && $linkBeliOnline == "" ) || (!$brochure && $linkBeliOnline != "
 	<div class="ctab-wrap">
 		<div class="ctab-item <?php echo $class; ?>">
 			<a href="#" class="ctab-action active" data-target="ctabform">
-				<img src="http://axamandiri.sudahdistaging.com/wp-content/uploads/2017/10/Health-Icons-05-pre-existing-cond.png" alt="Form Tab">
+				<img src="<?php echo bloginfo('template_url');?>/images/revamp/Health-Icons-05-pre-existing-cond.png" alt="Form Tab">
 				<span>
 					<?php _e('Daftar disini') ?>
 				</span>
 			</a>
 			<?php if( $brochure ): ?>
 			<a href="#" class="ctab-action" data-target="ctabdownload">
-				<img src="http://axamandiri.sudahdistaging.com/wp-content/uploads/2017/10/Health-Icons-15-rawat-jalan.png" alt="Form Tab">
+				<img src="<?php echo bloginfo('template_url');?>/images/revamp/Health-Icons-15-rawat-jalan.png" alt="Form Tab">
 				<span>
 					<?php _e('Unduh Informasi Ini') ?>
 				</span>
@@ -114,7 +114,7 @@ if( ($brochure && $linkBeliOnline == "" ) || (!$brochure && $linkBeliOnline != "
 			
 			if($linkBeliOnline != ""): ?>
 			<a href="<?php echo $linkBeliOnline; ?>" class="ctab-link">
-				<img src="http://axamandiri.sudahdistaging.com/wp-content/uploads/2017/10/Health-Icons-07-rawat-inap.png" alt="Form Tab">
+				<img src="<?php echo bloginfo('template_url');?>/images/revamp/Health-Icons-07-rawat-inap.png" alt="Form Tab">
 				<span>
 					<?php _e('Beli Online') ?>
 				</span>
@@ -122,21 +122,21 @@ if( ($brochure && $linkBeliOnline == "" ) || (!$brochure && $linkBeliOnline != "
 			<?php endif; ?>
 
 			<a href="<?php echo site_url('bandingkan-produk'); ?>" class="ctab-link bg-yellow">
-				<img src="http://axamandiri.sudahdistaging.com/wp-content/uploads/2017/10/Health-Icons-07-rawat-inap.png" alt="Form Tab">
+				<img src="<?php echo bloginfo('template_url');?>/images/revamp/Health-Icons-07-rawat-inap.png" alt="Form Tab">
 				<span>
 					<?php _e('Bandingkan Produk') ?>
 				</span>
 			</a>
 
 			<a href="#" id="liveagent_button_online_5736F0000000FeC" onclick="liveagent.startChat('5736F0000000FeC'); return false;" class="ctab-link bg-yellow">
-				<img src="http://axamandiri.sudahdistaging.com/wp-content/uploads/2017/10/Health-Icons-07-rawat-inap.png" alt="Form Tab">
+				<img src="<?php echo bloginfo('template_url');?>/images/revamp/Health-Icons-07-rawat-inap.png" alt="Form Tab">
 				<span>
 					<?php _e('Live Chat') ?>
 				</span>
 			</a>
 
 			<a href="#" id="liveagent_button_offline_5736F0000000FeC" onclick="liveagent.startChat('5736F0000000FeC'); return false;" class="ctab-link bg-yellow">
-				<img src="http://axamandiri.sudahdistaging.com/wp-content/uploads/2017/10/Health-Icons-07-rawat-inap.png" alt="Form Tab">
+				<img src="<?php echo bloginfo('template_url');?>/images/revamp/Health-Icons-07-rawat-inap.png" alt="Form Tab">
 				<span>
 					<?php _e('Live Chat Offline') ?>
 				</span>

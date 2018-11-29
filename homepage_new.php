@@ -46,9 +46,6 @@
 	<div id="solusi_main" class="">
 		<div class="row solusiContainer">
 			<div id="solusiWidget">
-				<div class="header2judulsolusikami m-bottom-30">
-					<?php _e("Solusi Kami");?>
-				</div>
 				<ul class="list-inline">
 					<li>
 						<a href="<?php echo site_url();?>/solusi-kesehatan-revamp">
@@ -121,6 +118,13 @@
 							</div><br/>BELI ONLINE
 						</a>
 					</li>
+					<li>
+						<a href="<?php echo site_url('solusi-untuk-anda'); ?>">
+							<div class="icon-solution-home">
+								<img src="<?php echo bloginfo('template_url');?>/images/revamp/icon-belionline.png"/>
+							</div><br/>Corporate Solution
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -180,7 +184,6 @@
 			</div>
 		</div>
 	</div>
-	<?php get_template_part("widget/hargaunit");?>
 	
 	<?php echo do_shortcode('[widget_inspirasi][/widget_inspirasi]'); ?>
 	<div id="region-1">
@@ -196,4 +199,5 @@
 				</div>
 		</div>
 	</div>
+	<?php get_template_part("widget/hargaunit");?>
 <?php get_footer();?>

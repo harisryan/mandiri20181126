@@ -32,6 +32,7 @@
         <link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet">
 
         <link href="<?php bloginfo('template_url');?>/css/mobile.css" rel="stylesheet">
+        <link href="<?php bloginfo('template_url');?>/css/revamp.css" rel="stylesheet">
 
         <!-- Favicon and touch icons  -->
         <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url');?>/images/favicon/apple-touch-icon.png">
@@ -113,198 +114,6 @@
                 $number = get_option('ballon_number');
             }
         ?>
-        <style>
-            .ballon-active .ballon-menu > a{
-                position: relative;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu > a:after,
-            .ballon-active .ballon-menu > a:after{
-                content: "";
-                position: absolute;
-                top: -15px;
-                text-align: center;
-                width: 25px;
-                z-index: 2;
-                height: 25px;
-                background: url('<?php echo $imgNotif ?>') no-repeat;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu > a:after{
-                background: url('<?php echo $imgNotif ?>') no-repeat;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu > a:before,
-            .ballon-active .ballon-menu > a:before{
-                content: "<?php echo $number; ?>";
-                position: absolute;
-                top: -14px;
-                font-size: 13px;
-                right: -15px;
-                z-index: 3;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu > a:before{
-                color: #fff;
-            }
-
-            .ballon-active .ballon-menu > a:before{
-                color: #fff;
-            }
-
-            .ballon-active .ballon-menu{
-                background: #fff !important;
-            }
-
-            .ballon-active .ballon-menu > a{
-                color: #00539B !important;
-            }
-
-            .ballon-active .ballon-menu.expanded > a{
-                color: #fff !important;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu{
-                background: #00539B !important;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu > a .title-menu.fix,
-            .ballon-active #fixed-navigation .ballon-menu > a{
-                color: #fff !important;
-            }
-
-            .ballon-active #fixed-navigation .sub-menu .ballon-menu > a,
-            .ballon-active .sub-menu .ballon-menu > a{
-                position: relative;
-            }
-
-            .ballon-active #fixed-navigation .sub-menu .ballon-menu > a:before,
-            .ballon-active .sub-menu .ballon-menu > a:before{
-                content: "<?php echo $number; ?>";
-                position: absolute;
-                top: -16px;
-                font-size: 13px;
-                right: -14px;
-                z-index: 3;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu > a:before{
-                top: -23px;
-            }
-
-            .ballon-active #fixed-navigation .sub-menu .ballon-menu > a:after,
-            .ballon-active .sub-menu .ballon-menu > a:after{
-                content: "";
-                position: absolute;
-                right: 0;
-                top: -4px;
-                right: -23px;
-                text-align: center;
-                width: 25px;
-                height: 25px;
-            }
-
-            .ballon-active .sub-menu .ballon-menu{
-                background: #0e46a3 !important;
-            }
-
-            .ballon-active .sub-menu .ballon-menu.hovered{
-                background: #073b91 !important
-            }
-
-            .ballon-active .sub-menu .ballon-menu a{
-                color: #fff !important;
-            }
-
-            .ballon-active #fixed-navigation .sub-menu .ballon-menu > a:after{
-                background: url('<?php echo $imgNotif ?>') no-repeat;
-            }
-
-            .ballon-active #fixed-navigation .sub-menu .ballon-menu > a:before{
-                color: #fff;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu{
-                position: relative;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu,
-            .ballon-active #fixed-navigation .ballon-menu.expanded{
-                position: inherit;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu:after{
-                content: "";
-                width: 100%;
-                bottom: -1px;
-                left: 0;
-                height: 1px;
-                background: #00539b;
-                position: absolute;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu:after{
-                height: 0;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu{
-                background: #0e46a3 !important;
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu.hovered{
-                background: #073b91 !important
-            }
-
-            .ballon-active #fixed-navigation .ballon-menu.expanded .sub-menu .ballon-menu a{
-                color: #fff !important;
-            }
-
-            .ballon-active .off-canvas-list .ballon-menu > a{
-                position: relative;
-            }
-
-            .ballon-active .off-canvas-list .ballon-menu > a:after{
-                right: 0;
-                font-size: 12px;
-                background: none;
-            }
-
-            .ballon-active .off-canvas-list .ballon-menu > a:before{
-                content: "";
-                right: 10px;
-            }
-
-            .ballon-active .off-canvas-list .ballon-menu > a > span{
-                position: relative;
-            }
-
-            .ballon-active .off-canvas-list .ballon-menu > a > span:after {
-                content: "";
-                background: url('<?php echo $imgNotif ?>') no-repeat;
-                height: 25px;
-                width: 25px;
-                position: absolute;
-                top: -13px;
-                right: -27px;
-            }
-
-            .ballon-active .off-canvas-list .ballon-menu > a > span:before{
-                content:"<?php echo $number; ?>";
-                position: absolute;
-                top: -14px;
-                right: -18px;
-                z-index: 3;
-                color: #fff;
-            }
-
-            .ballon-active .off-canvas-list .ballon-menu{
-                background: inherit !important;
-            }
-
-            .ballon-active .off-canvas-list .ballon-menu a{
-                color: rgba(255, 255, 255, 0.7) !important;
-            }
-        </style>
     </head>
     <body <?php body_class($additional_class); ?>>
 
@@ -339,9 +148,9 @@
             <?php endif; ?>
         <?php endif; ?>
     <?php endif; ?>
-    <div class="off-canvas-wrap">
-    <div class="inner-wrap">
-    <header id="header" class="desktop-content" aria-label="header">
+    <div class="off-canvas-wrap main-body">
+    <div class="inner-wrap hidden">
+    <header id="header" class="desktop-content old" aria-label="header">
         <div class="row">
                 <div id="topSection" class="clearfix">
                     <div id="menuLeft" class="left">
@@ -363,7 +172,7 @@
                 </div>
             </div>
         </div>
-        <div id="main-navigation">
+        <div id="main-navigation" class="nav-fixed">
              <div class="row">
                 <?php
                 $image = (!empty(get_field('mega_menu_banner_solusi', 'options')))? get_field('mega_menu_banner_solusi', 'options') : " ";
@@ -379,14 +188,23 @@
                         'walker'         => new axa_sublevel
                     );
                 wp_nav_menu( $mainmenu );?>
-            <div id="solution-nav">
-                <a href="<?php echo site_url('solusi-untuk-anda'); ?>" class="btn-primary">Solusi untuk Anda <i class="fa fa-angle-right"></i></a>
+            <div class="right-container">
+				<div class="search-container">
+					<img class="search-monocrom" src="<?php echo bloginfo('template_url');?>/images/revamp/search-monocrom.png"/>
+					<form class="inline-form-search" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+						<input type="text" value="" name="s" id="s" placeholder="<?php _e("Cari..."); ?>" autocomplete="off" aria-label="Cari Content" />
+						<input type="submit" class="cp-display--none" value="Car..." />
+					</form>
+				</div>
+				<a href="<?php echo site_url('');?>">
+					<img class="logo-monocrom" src="<?php echo bloginfo('template_url');?>/images/revamp/logo-monocrom.png"/>
+				</a>
             </div>
 
             </div>
         </div>
     </header>
-    <div id="fixed-navigation" style="display:none;">
+    <div id="fixed-navigation"  class="hidden">
         <div class="row">
             <?php
             $image = (!empty(get_field('mega_menu_banner_solusi', 'options')))? get_field('mega_menu_banner_solusi', 'options') : " ";
@@ -423,14 +241,16 @@
     <div class="inner-wrap">
 
 
-<div id="mobile-navigation"  class="mobile-content">
+	<div id="mobile-navigation" class="mobile-content">
         <nav class="tab-bar">
           <section class="left-small" aria-label="Left Small">
             <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
           </section>
 
           <section class="middle tab-bar-section" aria-label="Middle">
-                <span id="logo"><a href="<?php echo site_url('');?>" class="block">AXA Mandiri</a></span>
+                <a href="<?php echo site_url('');?>">
+					<img class="logo-monocrom" src="<?php echo bloginfo('template_url');?>/images/revamp/logo-monocrom.png"/>
+				</a>
           </section>
 
          <section class="right-small" aria-label="Right Small">
@@ -507,3 +327,42 @@
         <?php get_template_part('widget/customer-care');?>
     </aside>
 </div>
+	
+	<div class="sticky-button-container">
+		<div id="solution_detail" class="detail_liveagent">
+			<p class="title">Selamat Datang di AXA Mandiri Online Solution</p>
+			<p class="m-bottom-5">Pilih layanan yang Anda butuhkan</p>
+			<div class="clearfix"></div>
+			<ul class="list_pembelianonline m-all-0 list-blue text-left f-14">
+				<li><a href="https://portal.axa.co.id/mandiritravelonline?utm_source=landingpage&amp;utm_medium=onlinesolution&amp;utm_campaign=axamandiri&amp;utm_term=&amp;utm_content=&amp;referrer_session_id=" class="block" target="_blank">AXA Mandiri Travel</a></li>
+				<li><a href="https://axa-mandiri.force.com/corporatesolutions/LoginScreen" class="block" target="_blank"> AXA Mandiri e-Access</a></li>
+				<li><a href="https://axa-mandiri.co.id/belionline" class="block" target="_blank">AXA Mandiri e-Commerce</a></li>
+				<li><a href="https://beli.axa-mandiri.co.id" class="block" target="_blank">AXA Mandiri Mobil</a></li>
+			</ul>
+
+
+			<div class="footer-widget-custcare">
+
+			</div>
+		</div>	
+		<div id="chat_operational" class="detail_liveagent">			
+                <p class="title">Maaf Layanan kami sedang offline</p>
+                <p class="m-bottom-5">Jam kerja kami senin - jumat pukul 08.00-17.00</p>
+		</div>
+		<div id="mobile_solution" class="col-md-6 col-xs-6 left-section">
+			<img src="<?php echo bloginfo('template_url');?>/images/revamp/icon-solution.png"/> <br/>
+			<span>Temukan Kebutuhan Anda</span>
+		</div>		
+		<!--ONLINE-->
+		<div id="mobile_liveagent_button_online_5736F0000000FeC" onclick="liveagent.startChat('5736F0000000FeC');" class="col-md-6 col-xs-6 right-section">
+			<img src="<?php echo bloginfo('template_url');?>/images/revamp/icon-chat-new.png"/> <br/>
+			<span>Live Chat</span>
+		</div>
+		<!--OFFLINE-->
+		<div id="mobile_liveagent_button_offline_5736F0000000FeC" class="col-md-6 col-xs-6 right-section mobile_liveagent_offline">
+			<img src="<?php echo bloginfo('template_url');?>/images/revamp/icon-chat-new.png"/> <br/>
+			<span>Live Chat</span>
+		</div>
+	</div>
+	
+	

@@ -11,9 +11,71 @@
   //     video = new YT.Player('ytvideo');
   //     video2 = new YT.Player('ytvideo-mobile');
   // }
+if (!window._laq) { window._laq = []; }
+window._laq.push(function(){liveagent.showWhenOnline('5736F0000000FeC', document.getElementById('mobile_liveagent_button_online_5736F0000000FeC'));
+liveagent.showWhenOffline('5736F0000000FeC', document.getElementById('mobile_liveagent_button_offline_5736F0000000FeC'));
+});
+
+ 
 $(document).ready(function() {
-      
-        //INSPIRASI WIDGET
+    // REVAMP
+    $(".search-monocrom").click(function(){
+		var isExpanded = $("form#searchform.inline-form-search").hasClass("expanded");
+		if (isExpanded)
+		{
+			$("form#searchform.inline-form-search").removeClass("expanded");
+		}
+		else{
+			$("form#searchform.inline-form-search").addClass("expanded");  
+  	    }
+    })
+	
+	var position = $(window).scrollTop(); 
+    $(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			if(scroll > position) {
+				console.log('scrollDown');
+				$(".sticky-button-container").slideUp('fast');
+				//$('div').text('Scrolling Down Scripts');
+			} else {
+				 console.log('scrollUp');
+				$(".sticky-button-container").slideDown('fast');
+				 //$('div').text('Scrolling Up Scripts');
+			}
+		}
+		position = scroll;
+		return false;
+	});
+
+	$("#mobile-navigation .left-off-canvas-menu").height($(window).height());
+	 
+	$(".mobile_liveagent_offline").click(function(){
+		$(".sticky-button-container .detail_liveagent").hide("fast");
+		if($(".sticky-button-container #chat_operational").css("display") == "none")
+		{
+			$(".sticky-button-container #chat_operational").show("fast");				
+		}
+		else
+		{
+			$(".sticky-button-container #chat_operational").hide("fast");
+		}
+	})
+
+	$("#mobile_solution").click(function(){
+		$(".sticky-button-container .detail_liveagent").hide("fast");
+		if($(".sticky-button-container #solution_detail").css("display") == "none")
+		{
+			$(".sticky-button-container #solution_detail").show("fast");				
+		}
+		else
+		{
+			$(".sticky-button-container #solution_detail").hide("fast");
+		}
+	})
+	//END REVAMP
+	  
+       //INSPIRASI WIDGET
       $("#article-post .date").timeago();
       $("#inspirasi-section .toggleNav a").click(function(){
           $(this).parents().toggleClass("expanded");
@@ -35,15 +97,15 @@ $(document).ready(function() {
 
       //8 sec engagement on page
 
-    $("#fixed-navigation").hide();
-        $(window).scroll(function(){
-          if($(window).scrollTop()>500){
-            $("#fixed-navigation").fadeIn("fast")
-          }
-          else{
-            $("#fixed-navigation").fadeOut("fast")
-          }
-      });
+//    $("#fixed-navigation").hide();
+//        $(window).scroll(function(){
+//          if($(window).scrollTop()>500){
+//            $("#fixed-navigation").fadeIn("fast")
+//          }
+//          else{
+//            $("#fixed-navigation").fadeOut("fast")
+//          }
+//      });
 
       $("#customercare-fixed").hide();
         $(window).scroll(function(){
@@ -389,7 +451,7 @@ $(document).ready(function() {
       $(window).scroll(function() {
             var scroll = $(window).scrollTop();
 
-            if (scroll >= 100) {
+            if (scroll >= 50) {
               $("#mobile-navigation").addClass("fixed");
             } else {
               $("#mobile-navigation").removeClass("fixed");
@@ -1101,4 +1163,3 @@ $(document).ready(function() {
     }
   });
 })
-

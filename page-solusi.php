@@ -7,32 +7,66 @@
 <?php if($slug="solusi-kesehatan"):?>
 	<script src='//pixel.mathtag.com/event/js?mt_id=570050&mt_adid=125263&v1=&v2=&v3=&s1=&s2=&s3='></script>
 <?php endif;?>
-<div id="page-container" style="background-image:url(<?php the_field('header_image');?>);">
-	<div id="masthead" class="row relative">
-		<div class="mobile-content absolute" id="header-image" style="background-image:url(<?php the_field('header_image');?>);"></div>
-		<div class="content large-4">
-			<!--<h1><?php the_title(); ?></h1>-->
-            <h1 class="header1"><?php the_title(); ?></h1>
-
-			<!--<h2 style="color:<?php the_field('subtitle_text_color');?>"><?php the_field('sub_title');?></h2>-->
-			<div class="header2" style="color:<?php the_field('subtitle_text_color');?>"><?php the_field('sub_title');?></div>
-			<?php
-			if ( ! is_page( 'solusirencanakanlebih' ) ) {
-			?>
-			<ul id="separate" class="personal relative cp-position--top0">
-
-				<li class="selected"><a href="<?php echo site_url('/') .$slug;?>">Personal</a></li>
-				<li><a href="<?php echo site_url('bisnis/') . $slug;?>">Bisnis</a></li>
-			</ul>
-			<?php
-			}
-			?>
-		</div><!--end large 6-->
-
-		<div class="show-for-large-only"><?php get_template_part("widget/customer-care");?></div>
-	</div><!--end masthead-->
-
+<div id="page-container">
 	<div id="wrapper" class="row">
+			<div id="masthead" class="row relative solusi-masterhead">
+				<ul id="separate" class="personal relative cp-position--top0">
+					<li class="selected"><a href="<?php echo site_url('/') .$slug;?>">Personal</a></li>
+					<li><a href="<?php echo site_url('bisnis/') . $slug;?>">Bisnis</a></li>
+				</ul>		
+			</div>
+			<!--Product listing-->
+			<section id="product-listing" aria-label="Product Listing" class="clearfix sections bg-white radius-bottom-5">
+			<div class="title-content">
+				<h3 class="c-blue"><?php ( is_page( 'solusirencanakanlebih' ) ) ? _e("Solusi Khusus untuk Anda") : _e("Produk Kesehatan"); ?></h3>
+				<img class="icon-product" src="<?php echo bloginfo('template_url');?>/images/revamp/icon-kesehatan.png" alt="" />
+			</div>
+			<div class="blue-underline"></div>
+
+			<?php
+			$posts_product = get_field('solusi_relationship');
+			if( $posts_product ): ?>
+			    <ul class="list-inline-product">
+			    <?php foreach( $posts_product as $post):?>
+			        <?php setup_postdata($post);?>
+			        <?php $term = wp_get_post_terms( $post->ID, "matrix_section" ); ?>
+			        <li class="product-item">
+						<?php include(locate_template('widget/leadform.php')); ?>
+						<div class="box-product">
+							<?php 
+							$thumbnail_custom_pm = get_field('image_square',$post->ID);				
+							?>
+							<div class="bg-thumbnail" style="background-image:url('<?php echo $thumbnail_custom_pm ?>');">
+								<?php if ($thumbnail_custom_pm == null) 
+									the_post_thumbnail('matrix_small',  array( 'alt' => get_the_title() ) );
+								?>
+								<a href="#" postid="<?php echo $post->ID ?>" class="btn-hubungi button red transparent block bottom">HUBUNGI SAYA </a>
+							</div>
+							<div>
+								<h5 style="font-size:1.063em" class="c-blue"><?php the_title(); ?></h5> <p class="c-blue" style="line-height:5px;font-size: 16px;"></p>
+								<ul id="list-manfaat">
+									<?php $count = 1; 
+									while(has_sub_field('matrix_manfaat')): ?>
+									<?php if($count < 4): ?>
+										<li><?php the_sub_field('title');?></li>
+									<?php endif; ?>
+									<?php $count++; endwhile;?>
+								</ul>
+								<div class="bottom-section">
+									<a href="<?php the_permalink(); ?>" class="c-red" style="font-size:0.8em;line-height:10px;" onclick="javascript:return tc_events_2(this,'interaction',{interaction_name:'Havas_Lebih_lanjut_<?=$post->post_name?>',interaction_detail:'click'});">INFO SELENGKAPNYA <span class="fa fa-arrow-right"></span></a>	
+									<br/>
+									
+									<a href="<?php echo site_url('bandingkan-produk/'.$bandingkanSlug);?>" class="c-red" style="font-size:0.8em;line-height:10px;" onclick="javascript:return tc_events_2(this,'interaction',{interaction_name:'Havas_Lebih_lanjut_<?=$post->post_name?>',interaction_detail:'click'});">BANDINGKAN PRODUK <span class="fa fa-arrow-right"></span></a>								</div>
+							</div>
+						</div>
+			        </li>
+			    <?php endforeach; ?>
+			    </ul>
+			    <?php wp_reset_postdata();?>
+			<?php endif; ?>
+		</section>
+		<!--End product listing-->
+
 		<section id="content-details" aria-label="Content Details" class="clearfix">
 			<?php if( have_posts() ) : the_post(); ?>
 				<div class="large-9 columns f-16"><?php the_content();?></div>
@@ -87,84 +121,14 @@
 			<?php wp_reset_postdata();?>
 		</section><!--end manfaat luas-->
 
-
-		<section id="product-listing" aria-label="Product Listing" class="clearfix sections bg-white2 radius-bottom-5">
-			<a href="<?php echo site_url('bandingkan-produk/'.$bandingkanSlug);?>" class="button blue floating">
-				<?php /* _e("<!--:en-->Compare Products<!--:--><!--:id-->Bandingkan Produk<!--:-->"); */
-					( is_page( 'solusirencanakanlebih' ) ) ? _e("Bandingkan Solusi") : _e("Bandingkan Produk"); ?>
-			</a>
-			<h3><?php /* _e("<!--:en-->Special products for you<!--:--><!--:id-->Produk Khusus untuk Anda<!--:-->"); */
-					( is_page( 'solusirencanakanlebih' ) ) ? _e("Solusi Khusus untuk Anda") : _e("Produk Khusus untuk Anda"); ?></h3>
-			<h4 class="small-title m-bottom-45"><?php /* _e("<!--:en-->Select AXA Mandiri products according to your requirements<!--:--><!--:id-->Pilih produk AXA Mandiri sesuai dengan kebutuhan Anda<!--:-->"); */
-					( is_page( 'solusirencanakanlebih' ) ) ? _e("Pilih solusi AXA Mandiri sesuai dengan kebutuhan Anda") : _e("Pilih produk AXA Mandiri sesuai dengan kebutuhan Anda"); ?></h4>
-			<?php
-			$posts = get_field('solusi_relationship');
-			if( $posts ): ?>
-			    <ul id="listing-items" class="clearfix desktop-content">
-			    <?php foreach( $posts as $post):?>
-			        <?php setup_postdata($post); ?>
-			        <?php $term = wp_get_post_terms( $post->ID, "matrix_section" ); ?>
-			        <li class="clearfix elements <?=$term[0]->slug?>" data-category="<?=$term[0]->slug?>">
-			        	<div class="box w-244 h-315 radius-all-5 bg-white relative">
-			        	<a href="<?php the_permalink(); ?>" class="postThumbnail h-80 block relative">
-							<span class="separate-small absolute"></span>
-							<?php 
-							$thumbnail_custom_pm = get_field('thumbnail_custom_pm',$post->ID);
-							if($thumbnail_custom_pm != null): 
-							?>
-								<img src="<?php echo $thumbnail_custom_pm ?>" alt="<?php echo get_the_title() ?>" />
-							<?php else: ?>
-								<?php the_post_thumbnail('matrix_small',  array( 'alt' => get_the_title() ) );  ?>
-							<?php endif; ?>
-						</a>
-						<div class="title">
-							<h2 class="f-14 c-blue"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						</div>
-
-						<div class="details p-all-20">
-			            	<!-- <h5 class="f-16 c-blue"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5> -->
-			            	<ul class="list-grey">
-			            	<?php $count = 1; while(has_sub_field('matrix_manfaat')): ?>
-			            	<?php if($count < 4): ?>
-			            		<li class="f-12"><?php the_sub_field('title');?></li>
-			            	<?php endif; ?>
-			            	<?php $count++; endwhile;?>
-			           	 	</ul>
-			            </div>
-			            <a href="<?php the_permalink(); ?>" class="view-more bg-greylight4 block text-center p-all-10 f-13 absolute" onclick="javascript:return tc_events_2(this,'interaction',{interaction_name:'Havas_Lebih_lanjut_<?=$post->post_name?>',interaction_detail:'click'});"><i class="fa fa-chevron-circle-right" aria-label="<?php echo get_the_title(); ?>"></i>Lebih Lanjut</a>
-			        </div>
-			        </li>
-			    <?php endforeach; ?>
-			    </ul>
-			    <?php wp_reset_postdata();?>
-			<?php endif; ?>
-
-			<form id="product-listing-mobile" class="mobile-content" action="">
-				<?php
-					$posts = get_field('solusi_relationship');
-					if( $posts ): ?>
-				<select name="" class="" tabindex="1">
-
-					<option value="0"><?php /* _e("<!--:en-->Choose Product<!--:--><!--:id-->Pilih Produk<!--:-->"); */
-												_e("Pilih Produk"); ?></option>
-					<?php foreach( $posts as $post):?>
-				        <?php setup_postdata($post); ?>
-				        <?php $term = wp_get_post_terms( $post->ID, "matrix_section" ); ?>
-					<option value="<?php the_permalink(); ?>"><?php the_title(); ?></option>
-					<?php endforeach; ?>
-				</select>
-				 <?php wp_reset_postdata();?>
-				 <button type="submit" class="button blue">Lihat Produk</button>
-				 <a href="<?php echo site_url('bandingkan-produk');?>" class="button bg-bandingkan"><?php /* _e("<!--:en-->Compare<!--:--><!--:id-->Bandingkan<!--:-->"); */
-				 																							_e("Bandingkan"); ?></a>
-			</form>
-			<?php endif; ?>
-
-		</section><!--end product listing-->
 		<script type="text/javascript">
 			$("#product-listing-mobile select").change(function(){
 				$("#product-listing-mobile").attr("action", this.value);
 			});
+			
+			$(".btn-hubungi").click(function(){
+				$("#leadform_" + $(this).attr("postid")).show();
+			})
 		</script>
 
 
@@ -173,5 +137,5 @@
 	</div><!--end row-->
 <?php get_template_part("widget/hargaunit");?>
 </div><!--end page-container-->
-
+<?php get_template_part("widget/leadform");?>
 <?php get_footer();?>
